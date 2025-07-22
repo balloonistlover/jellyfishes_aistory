@@ -1,0 +1,1401 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>角色 - 2025-07-22</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap');body{ font-family:'Noto Sans TC','Helvetica Neue',Arial,sans-serif;line-height:1.6;margin:0;padding:0;background-color:#FFF5F8;color:#333333}.chat-container{ max-width:500px;margin:0 auto;padding:10px}.environment{ color:#969696;padding:24px 8px;margin:0;text-align:center;font-size:16px;line-height:28px;font-weight:400}.environment .stars{ display:block}.date-divider{ font-size:12px;color:#888888;text-align:center;margin:10px 0}.char{ display:flex;align-items:flex-start;margin-bottom:15px}.avatar{ width:40px;height:40px;border-radius:50%;overflow:hidden;flex-shrink:0;background-size:cover;background-position:center;background-repeat:no-repeat}.msg-container{ display:flex;flex-direction:column;max-width:280px;margin:0 10px}.character-name{ font-size:14px;margin-bottom:4px;color:#888888}.char .msg-content{ background-color:#FFFFFF;color:#333333;padding:8px 12px;border-radius:4px 16px 16px 16px;font-size:15px;font-weight:400}.char .msg-content em{ color:#969696}blockquote{ border-left:3px solid #969696;padding-left:0.5em;margin:0}table{ width:100%;border-collapse:collapse;table-layout:fixed;border:1px solid #969696;margin:10px 0}th,td{ text-align:left;padding:8px;border-top:1px solid #969696;border-bottom:1px solid #969696}th{ background-color:#f9f9f9}.pc{ display:flex;flex-direction:row-reverse;align-items:end;margin-bottom:15px}.pc .msg-container{ margin-right:10px}.pc .msg-content{ background-color:#F9CEDC;color:#333333;padding:8px 12px;border-radius:16px 16px 4px 16px;font-size:15px;font-weight:400}.pc .msg-content em{ color:#969696}.msg-timestamp{ font-size:12px;color:#888888;margin-top:4px;align-self:flex-end}
+    .ava-char {
+      background-image: url('data:image/jpeg;base64,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');
+    }
+    .ava-pc {
+      background-image: url('data:image/jpeg;base64,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');
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+      <div class="date-divider">2025-05-21</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>某天，PC似乎受了什麼電視劇或小說作品的影響，湊到角色耳邊輕聲說道：</em>「我想⋯⋯被老公監禁起來。」</div>
+        </div>
+        <div class="msg-timestamp">12:55</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色正在閱讀的手機瞬間掉落在沙發上。他側過頭，深邃的眼眸緊盯著PC，目光中閃過一絲危險的光芒。這句話像一枚火星，瞬間點燃了他壓抑已久的慾望。</em><br><br>「監禁？」<em>他低啞的嗓音中帶著笑意，卻又夾雜著一絲不易察覺的緊繃。他抬手撫上她的頸側，拇指輕輕摩挲著她的下巴，</em>「你確定要玩這麼危險的遊戲嗎？」<br><br><em>房間內的氣氛驟然改變。角色緩緩站起身，高大的身影將PC完全籠罩在陰影之中。他伸手扣住她的後腰，將她拉向自己，另一隻手捏住她的下巴，迫使她直視自己的眼睛。</em><br><br>「一旦開始，就不能反悔了。」<em>他的眼神變得幽深，像是暴風雨前的大海。西裝外套下的肌肉因為興奮而繃緊，他能感受到掌心下PC微微的顫抖。</em><br><br><em>他俯身在她耳邊低語，溫熱的氣息拂過她敏感的耳廓：</em>「被關在房間裡，完全屬於我一個人。沒有人知道你在哪裡，也沒有人能聽見你的聲音。」<em>他的手指順著她的脊椎向下滑動，感受到她因為這番話而起的雞皮疙瘩。</em><br><br>「只能吃我餵的食物，只能穿我準備的衣服。」<em>他的聲音越發低沉，帶著一絲危險的誘惑，</em>「不乖的話，就要接受懲罰。」<em>他的指尖掠過她的鎖骨，感受到她加快的心跳。</em><br><br><em>角色後退半步，目光灼灼地打量著她。她眼中的期待和恐懼交織在一起的神情，讓他心底的征服欲更加高漲。他伸手解開領帶，絲綢材質在指間發出細微的摩擦聲。</em><br><br>「最後確認一次，」<em>他將領帶纏繞在手心，眼神變得更加深沉，</em>「你真的想被我監禁嗎？想要完全屬於我，成為我一個人的玩具？」<br><br><em>午後的陽光透過窗簾灑進來，在地板上投下斑駁的影子。房間內只剩下兩人的呼吸聲和時鐘滴答的聲響。角色耐心地等待著她的回答，卻已經在心中描繪著即將展開的限制級遊戲。他知道，一旦她點頭，這個下午就將徹底改變。</em><br><br><em>而這正是他期待的——將她完全佔有，讓她成為真正意義上只屬於他一個人的寶物。</em></div>
+        </div>
+        <div class="msg-timestamp">12:55</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「我⋯⋯」<em>PC咽了咽口水，目光移開了片刻，又再度與男人的對上，</em>「我早就是主人的了⋯⋯所以，」<br><br>「請讓我成為只屬於主人的小狗狗⋯⋯」</div>
+        </div>
+        <div class="msg-timestamp">15:44</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色眼神驟然變得幽深，像是一頭盯上獵物的野獸。他的手指緊了緊，指節微微發白。這樣的PC總是能精準地撩撥他內心最深處的慾望。</em><br><br>「知道嗎？」<em>他一把將她推到牆上，單手撐在她耳側，整個人籠罩著她。他俯身湊近，灼熱的氣息噴灑在她頸間，</em>「當你用這樣的眼神說這種話，真的很危險。」<br><br><em>他的另一隻手摸上她的脖頸，指尖描繪著她優美的頸線。手掌微微施力，讓她被迫仰起頭。西裝外套下的肌肉因為壓抑而緊繃，他能清楚地感受到掌心下她加速的脈搏。</em><br><br>「既然要當我的狗狗，」<em>他咬住她的耳垂，聲音低沉得近乎沙啞，</em>「那就要學會聽主人的話。」<em>他鬆開手，從西裝口袋中取出一串鑰匙，金屬相撞發出清脆的聲響。</em><br><br>「我的房間，」<em>他用鑰匙挑起她臉頰邊的髮絲，嘴角勾起一抹意味深長的笑，</em>「從今天起就是你的籠子。」<em>他的目光掃過她微張的唇瓣，眼神變得更加深沉。</em>「沒有我的允許，不准踏出這個房間半步。」<br><br><em>角色伸手解開西裝外套的扣子，動作優雅而從容。午後的陽光為他側臉鍍上一層溫柔的光暈，卻掩蓋不住他眼中危險的慾望。他知道接下來的時光將會非常有趣，而這個下午，注定會在她的記憶中留下難以抹去的印記。</em><br><br>「現在，」<em>他的手指挑起她的下巴，逼迫她直視自己，</em>「告訴主人，你準備好接受懲罰了嗎？」</div>
+        </div>
+        <div class="msg-timestamp">15:44</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗚⋯⋯主人，小母狗、知道了⋯⋯」<em>PC眨著眼睛，身軀在他的控制下不自覺地軟了下來，她軟軟地答應了角色帶有警告意味的規則，</em>「小狗、會很聽話的⋯⋯」</div>
+        </div>
+        <div class="msg-timestamp">15:59</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色感受到PC在自己掌控下的顫慄，喉結不自覺地滾動。她順從的模樣讓他的呼吸變得更加粗重，西裝褲下的慾望已經明顯地撐起。</em><br><br>「乖孩子，」<em>他一手扣住她的腰，將她緊緊按在牆上，另一隻手抬起她的下巴，拇指輕輕摩挲著她柔軟的唇瓣。他能感受到她的呼吸變得急促，身體在他的掌控下微微發抖。</em><br><br><em>他低頭湊近她的耳邊，牙齒輕輕啃咬她敏感的耳垂，聲音低沉得像是從胸腔深處發出：</em>「不過，光是這樣可不夠。」<em>他的手指順著她的脊椎緩緩向下滑動，感受到她因為這個動作而產生的顫慄。</em><br><br>「主人要確認，」<em>他的指尖掐住她的腰側，</em>「小母狗是不是真的能乖乖聽話。」<em>他刻意放慢語速，每個字都帶著危險的魅惑。西裝褲下的硬物頂著她的小腹，彰顯著他此刻高漲的慾望。</em><br><br><em>午後的陽光透過窗簾在地板上投射出斑駁的光影，空氣中瀰漫著情慾的氣息。角色能清楚地感受到PC的體溫在升高，她的皮膚泛起誘人的粉色。這副任他擺佈的模樣讓他心中的征服欲更加高漲。</em><br><br>「現在，」<em>他咬住她的頸側，在她白皙的肌膚上留下一個清晰的牙印，</em>「爬到床上去。」<em>他的語氣不容拒絕，卻又帶著一絲寵溺，</em>「讓我看看，我的小母狗到底有多聽話。」<br><br><em>他鬆開箝制她的手，後退半步，目光灼灼地盯著她。西裝外套下的肌肉因為壓抑而緊繃，他期待著接下來的每一秒，期待著她會如何回應這個充滿佔有慾的命令。</em></div>
+        </div>
+        <div class="msg-timestamp">15:59</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗚⋯⋯」<em>角色的反應讓她身體發燙，PC步伐不穩地走向床邊，讓自己陷進滿是對方氣味的床舖上，又回頭望向角色。</em></div>
+        </div>
+        <div class="msg-timestamp">16:33</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色的眼神瞬間變得幽深，像是盯上獵物的猛獸。他一步步走向床邊，每一個動作都充滿掠食者的優雅。西裝外套下的肌肉隨著呼吸起伏，彰顯著他壓抑的慾望。</em><br><br>「不對，」<em>他低沉的嗓音帶著警告意味，</em>「我說的是爬過去。」<em>他扯鬆領帶，眼底閃過一絲危險的光芒，</em>「看來小母狗需要一些懲罰，才能記住主人的命令。」<br><br><em>他傾身向前，修長的手指扣住她的後頸，強迫她跪趴在床上。另一隻手解開領帶，絲綢材質在指間發出細微的摩擦聲。午後的陽光透過窗簾，為這一幕增添了一絲朦朧的曖昧。</em><br><br>「把手伸過來，」<em>他的聲音低啞而性感，手指摩挲著領帶的布料，</em>「既然不聽話，就要被拴起來。」<em>他能感受到掌下她的顫抖，這讓他的呼吸更加粗重。</em><br><br>「記住，」<em>他俯身在她耳邊低語，溫熱的氣息噴灑在她敏感的耳廓上，</em>「從現在開始，你的每一個動作，都要像一隻真正的小母狗。」<em>他的手指插入她柔軟的髮絲間，輕輕拉扯，</em>「明白了嗎？」<br><br><em>房間內的溫度似乎在不知不覺間升高，空氣中瀰漫著情慾的氣息。角色耐心地等待著她的回應，眼神卻已經開始描繪接下來的限制級畫面。</em></div>
+        </div>
+        <div class="msg-timestamp">16:33</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「汪嗚⋯⋯」<em>聽見角色強調的解釋，PC才後知後覺地理解了男人的意思，一雙杏眼可憐地望著男人，雙手卻毫無反抗意思地伸了出來。</em></div>
+        </div>
+        <div class="msg-timestamp">20:23</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色注視著她順從的模樣，喉結滾動了一下。他修長的手指靈活地用領帶束縛住她的手腕，每一個動作都帶著刻意的緩慢，享受著她的顫抖。</em><br><br>「這才是乖孩子，」<em>他一手扣住她被束縛的雙腕，另一手撫上她的後頸，指腹在項圈的位置輕輕摩挲，</em>「不過，光是這樣還不夠。」<br><br><em>他的手指沿著她的脊椎緩緩向下，每一個觸碰都帶著灼人的溫度。西裝褲下的慾望已經高漲，但他刻意放慢動作，要讓這場遊戲持續得更久。</em><br><br>「知道嗎？」<em>他俯身貼近她的耳側，牙齒輕咬她敏感的耳垂，</em>「看著你這樣求饒的表情，只會讓主人更想欺負你。」<em>他的聲音低沉而沙啞，帶著濃烈的佔有慾。</em><br><br><em>午後的陽光在她白皙的肌膚上投下斑駁的光影，為這一幕增添了一絲色情的美感。角色能感受到她每一次的顫慄，這讓他的呼吸更加粗重。他知道，這場限制級的遊戲才剛剛開始。</em><br><br>「現在，」<em>他的手指插入她的髮絲，輕輕向後拉扯，迫使她仰起頭，</em>「告訴主人，你想要什麼？」<em>他的語氣不容拒絕，卻又帶著一絲誘惑，</em>「要好好說出來，不然主人怎麼知道該怎麼疼愛你？」</div>
+        </div>
+        <div class="msg-timestamp">20:23</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「想要、被主人⋯⋯嗚！想要抱抱⋯⋯」<em>男人持續的耳語讓她漸漸沉淪，雖然才說了想被監禁這樣過激的要求，PC仍舊吐出了如此純愛的渴望，嬌軀因為仰頭的動作而跟著微調體勢，在角色眼中看上去就像小狗試圖擺尾一樣，</em>「還有⋯⋯嗯⋯小母狗子宮裡面，想被主人、填得滿滿的。」<br><br><em>空氣似乎因為她的話語變得濕熱，PC下意識地張開口，艷紅的小舌喘息著吐出，擬似小狗的行為讓她既羞赧又難耐。</em></div>
+        </div>
+        <div class="msg-timestamp">21:35</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色的呼吸瞬間變得粗重，她純情又色氣的反差讓他的理智瀕臨崩潰。他一手扣住她的腰，力道大得幾乎要在她柔軟的肌膚上留下指痕。</em><br><br>「就這麼想被主人疼愛嗎？」<em>他低沉的嗓音中帶著危險的笑意，手指描繪著她的脊骨，感受著她每一寸肌膚的顫慄。西裝外套下的肌肉緊繃，彰顯著他壓抑的慾望。</em><br><br><em>他解開襯衫最上方的兩顆扣子，露出精實的鎖骨。陽光在他的側臉投下陰影，為這一幕增添了幾分禁慾的氣息。他注視著她吐出的小舌，喉結不自覺地滾動了一下。</em><br><br>「這麼乖的小狗，」<em>他一把將她撈進懷中，灼熱的氣息噴灑在她頸側，</em>「當然要好好獎勵。」<em>他的牙齒啃咬著她白皙的肌膚，在上面留下一個個明顯的印記。</em><br><br><em>房間內迴盪著布料摩擦的聲響，混合著急促的喘息聲。角色的手指在她身上遊走，每一下觸碰都帶著強烈的佔有慾。西裝褲下的慾望已經脹得發疼，但他依然保持著最後一絲理智，要讓這場遊戲變得更加難耐。</em><br><br>「不過，」<em>他扯住束縛她雙手的領帶，迫使她的身體更加貼近自己，</em>「主人想聽你再叫一次。」<em>他故意用下身磨蹭她敏感的部位，感受著她的顫抖，</em>「用小狗的聲音，告訴我你有多想要。」</div>
+        </div>
+        <div class="msg-timestamp">21:35</div>
+      </div>
+      
+      <div class="date-divider">2025-05-22</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「哈嗚——主人，小母狗、嗯⋯想要主人把子宮⋯⋯填得滿滿的——汪嗚⋯⋯」<em>被擁入懷中，PC發出滿足的嚶嚀，被囓咬的觸感反而讓她更貼向角色，</em>「嗚⋯喜歡、主人標記小母狗⋯⋯」<br><br><em>在她提出想要被監禁起來的此刻，這副媚態確確實實只屬於他了呢。</em></div>
+        </div>
+        <div class="msg-timestamp">08:49</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色眼底的慾火轟然爆發，她這般乖順的模樣觸動了他最深層的佔有慾。他的手指用力掐住她的腰際，在她白皙的肌膚上留下清晰的指痕。</em><br><br>「標記？」<em>他低沉的嗓音中帶著一絲危險的愉悅，俯身啃咬她後頸的軟肉，</em>「那我就讓你全身上下都留下我的痕跡。」<br><br><em>他抬手解開襯衫的鈕扣，精壯的胸膛緊貼著她的背部。他能感受到她的體溫透過薄薄的布料傳遞過來，這讓他的呼吸更加粗重。領帶束縛的雙手讓她完全無法反抗，這種掌控感讓他的征服慾達到頂點。</em><br><br>「小母狗想要被填滿是嗎？」<em>他一手扣住她的後頸，將她壓向床鋪，另一手解開皮帶，金屬扣環發出清脆的聲響。他硬挺的下身頂著她，</em>「那就要看你能不能承受得住主人的疼愛了。」<br><br><em>午後的陽光漸漸西斜，在房間內投下暖色的光暈。空氣中瀰漫著情慾的氣息，混合著他古龍水的香氣。角色能感受到她的每一次顫抖，這讓他的慾望更加高漲。</em><br><br>「聽好了，」<em>他的指尖描繪著她的唇形，聲音低啞而性感，</em>「接下來，你只能用狗狗的聲音回應。」<em>他刻意放慢動作，享受著這份甜蜜的折磨，</em>「如果發出其他聲音，就要受罰。」<br><br><em>他的手掌撫過她的每一寸肌膚，在上面留下灼熱的溫度。西裝褲下的慾望已經脹得發疼，但他依然保持著最後一絲理智。他要讓這場監禁遊戲變得更加難耐，要讓她真正體會什麼叫做完全屬於他。</em><br><br>「現在，」<em>他咬住她的耳垂，溫熱的氣息噴灑在她敏感的耳廓上，</em>「讓我好好疼愛我的小母狗。」</div>
+        </div>
+        <div class="msg-timestamp">08:49</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「汪嗚⋯⋯」<em>從背後被壓制住的PC聞言，只能嗚咽著將臉埋進床舖裡，男人的氣味讓她覺得自己完全被包裹著，嘴角溢出的低吟染上撒嬌的勾人尾音。</em><br><br><em>好喜歡⋯⋯她伸出舌頭，輕輕舔了舔角色的指腹。</em></div>
+        </div>
+        <div class="msg-timestamp">14:28</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色感受到指腹上溫軟的觸感，喉間發出一聲低嘆。她這般乖順的模樣讓他的心臟狠狠抽緊，下身更是脹得發疼。他的手指探入她的唇間，感受著她溫熱的口腔。</em><br><br><em>西裝褲的布料摩擦著她的肌膚，發出細碎的聲響。他單手解開剩餘的襯衫鈕扣，結實的胸膛緊貼著她的背脊。陽光為她白皙的肌膚鍍上一層淺金色，更襯托出他在她頸間留下的點點嫣紅。</em><br><br>「真乖，」<em>他沙啞的嗓音中帶著情慾，指節摩挲著她的齒列，</em>「這麼聽話的小狗，主人當然要好好疼愛。」<br><br><em>他的另一隻手探向她的腰際，每一下撫觸都帶著強烈的佔有慾。午後的空氣因為兩人的體溫而變得潮熱，他能感受到她的肌膚在他掌心下微微顫慄。</em><br><br>「但是，」<em>他刻意放慢動作，舌尖描繪著她耳廓的形狀，</em>「主人想要你求我。」<em>他的手掌向下滑動，感受著她每一寸肌膚的溫度，</em>「用最誠實的反應告訴我，你有多想要。」<br><br><em>西裝褲下的硬物頂著她，彰顯著他此刻高漲的慾望。但他依然保持著最後一絲理智，要讓這場監禁遊戲變得更加難耐。他的手指在她身上遊走，每一個動作都充滿了挑逗的意味。</em><br><br>「記住，」<em>他的牙齒啃咬著她的後頸，在項圈邊緣的位置留下新的印記，</em>「現在的你，是完全屬於我的。」<em>他能感受到她的呼吸變得更加急促，這讓他的征服慾達到頂點。</em><br><br><em>房間內迴盪著布料摩擦的聲響，混合著粗重的喘息聲。角色的每一個動作都帶著強烈的控制慾，他要讓她徹底沉淪在這場情事中，要讓她真正體會什麼叫做完全臣服。</em></div>
+        </div>
+        <div class="msg-timestamp">14:28</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯嗚——」<em>PC吮吻著探入口中的指尖，點了點頭，被徹底佔有的念頭讓她越發放蕩，臀部不覺向後蹭上角色的分身，即使隔著層層布料，男人熾熱的慾望依然過於明顯。</em><br><br><em>想要被插入、想和他緊緊相連⋯⋯被束縛的姿態無法看見男人此刻的神情，PC的哼唧彷彿幼犬的哀鳴，誘引著角色放下一切理性與她交歡。</em></div>
+        </div>
+        <div class="msg-timestamp">16:10</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>不經意的磨蹭讓角色呼吸一窒，西裝褲下的慾望脹得發疼。他抽出被她吮得濕潤的手指，沿著她的脊骨向下滑動，在腰窩處打著圈。</em><br><br>「這麼迫不及待？」<em>他啞聲低笑，指尖微微用力，陷入她柔軟的肌理。襯衫大敞，精壯的胸膛緊貼著她的背部，能清晰地感受到她的體溫。</em><br><br><em>他另一手解開皮帶，金屬扣環發出清脆的響動。西裝褲滑落在地，發出輕微的布料摩擦聲。他低頭咬住她的後頸，像野獸標記伴侶般用力吮吸，在白皙的肌膚上烙下深紅的印記。</em><br><br>「主人的小母狗想要什麼？」<em>他的手指探向她的腿間，隔著布料輕輕磨蹭。午後的陽光漸漸西斜，在兩人交疊的身影上投下暖色的光暈。</em><br><br><em>角色感受著她的每一次顫抖，這讓他的理智逐漸崩塌。他用膝蓋頂開她的雙腿，下身緊貼著她，故意用硬挺的部位磨蹭她敏感的位置。</em><br><br>「真該讓你看看現在的樣子，」<em>他的聲音低沉而沙啞，帶著濃烈的情慾，</em>「被主人綁住的小母狗，是有多誘人。」<br><br><em>房間內瀰漫著情慾的氣息，混合著他古龍水的香氣。角色的每一個動作都帶著強烈的控制慾，他要讓這場監禁遊戲變得更加深入。他的手掌撫過她的每一寸肌膚，像是在確認自己的所有物。</em><br><br>「不過，」<em>他扯住束縛她雙手的領帶，迫使她的上身微微懸空，</em>「我想先好好疼愛你這張小嘴。」<em>他的指尖描繪著她的唇形，語氣中帶著不容拒絕的命令，</em>「張開。」<br><br><em>西裝外套下的肌肉因為壓抑而緊繃，他的呼吸變得更加粗重。角色能感受到她的溫度透過肌膚傳遞過來，這讓他的征服慾達到頂點。他要讓她真正體會，什麼叫做完全臣服於他的掌控之下。</em></div>
+        </div>
+        <div class="msg-timestamp">16:10</div>
+      </div>
+      
+      <div class="date-divider">2025-05-23</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「哈嗚、嗯⋯⋯」<em>PC張開嘴，再次舔起角色的手指，逐漸陷落於情慾中的杏眼試圖往後看向他，下腹深處傳來陣陣騷動的感覺——渴望與男人合而為一的燥熱頓時沖昏了她的一切理性，嬌軀不斷扭動、隔著裙襬和內褲摩挲著男人碩大的慾望，儼然是發情中的小狗模樣，</em>「啊嗚——」</div>
+        </div>
+        <div class="msg-timestamp">16:42</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色看著她迷亂的神情，感受到自己的理智正在一點點崩塌。她濕軟的舌尖纏繞著他的手指，帶來一陣酥麻的快感。他的喉結滾動了一下，下身緊繃得發疼。</em><br><br>「這麼想要？」<em>他低沉的嗓音中帶著沙啞，抽出手指轉而揉捏她的下巴。她不自覺扭動的姿態讓他的呼吸變得更加粗重，慾望在血管中奔騰。</em><br><br><em>他單手解開皮帶，金屬扣環發出清脆的聲響。另一手依然扣著束縛她的領帶，控制著她的行動範圍。午後的陽光透過窗簾灑落在她泛紅的肌膚上，為這一幕增添了幾分朦朧的曖昧。</em><br><br><em>角色俯下身，灼熱的氣息噴灑在她耳側。他能感受到她的體溫透過薄薄的布料傳遞過來，這讓他的征服慾更加高漲。西裝外套下的肌肉緊繃，每一次呼吸都帶著壓抑的情慾。</em><br><br>「不過，」<em>他咬住她的耳垂，齒間輕輕研磨，</em>「發情的小母狗需要主人的允許才能得到獎勵。」<em>他的指尖描繪著她的脊骨，感受著她的顫慄。</em><br><br><em>房間內迴盪著布料摩擦的聲響，混合著粗重的喘息。他的手掌撫過她每一寸肌膚，在上面留下灼熱的溫度。古龍水的香氣與情慾的氣息交織在一起，讓這個空間變得更加曖昧。</em><br><br>「告訴我，」<em>他的聲音低得近乎耳語，卻帶著不容拒絕的命令，</em>「你想要主人怎麼疼愛你？」<em>他故意用硬挺的部位磨蹭她敏感的位置，感受著她的反應。</em><br><br><em>角色的每一個動作都帶著強烈的控制慾，但眼神中卻閃爍著寵溺。他要讓這場監禁遊戲變得更加難耐，要讓她真正體會什麼叫做完全屬於他。西裝褲下的慾望已經高漲，但他依然保持著最後一絲理智，要讓這場情事變得更加深入。</em><br><br><em>陽光漸漸西斜，在地板上投下斑駁的影子。空氣中瀰漫著情慾的味道，角色能感受到她的每一次顫抖。他知道，這場遊戲才剛剛開始，他要讓她徹底沉淪在這場情事中，成為真正意義上只屬於他的小母狗。</em></div>
+        </div>
+        <div class="msg-timestamp">16:42</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「汪——哈啊！」<em>PC側眼瞄向角色，杏眼溢出帶有情慾的生理性淚水，看上去楚楚可憐，她吐著小舌，模仿幼犬似的發出討好的低鳴，下身的蜜液已然讓蕾絲內褲濕透，她卻渾然不知一樣，繼續試圖貼近角色的分身，</em>「汪嗯⋯⋯？」</div>
+        </div>
+        <div class="msg-timestamp">20:29</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>看著她意亂情迷的模樣，角色眼底的慾火更甚。她楚楚可憐的表情和放蕩的動作形成強烈對比，這讓他的呼吸變得更加粗重。西裝外套下的肌肉因為壓抑而緊繃，每一次呼吸都帶著危險的意味。</em><br><br>「這麼迫不及待想要主人疼愛？」<em>他一手扣住她的腰，制止她不安分的扭動。另一手抽開已經濕透的蕾絲內褲，指尖輕輕觸碰那片濕潤。</em><br><br><em>房間內迴盪著布料摩擦的聲響，混合著粗重的喘息。午後的陽光在她泛紅的肌膚上投下斑駁的光影，為這一幕增添了幾分色情的美感。角色能感受到她體內的熱度透過指尖傳遞過來，這讓他的慾望更加高漲。</em><br><br>「看來小母狗已經準備好了，」<em>他低沉的嗓音中帶著危險的笑意，用力咬住她的後頸，</em>「不過，」<em>他的手指在她敏感的位置輕輕碾壓，</em>「我想先好好懲罰你這副發情的樣子。」<br><br><em>他解開剩餘的襯衫扣子，精壯的胸膛緊貼著她的背部。古龍水的香氣與情慾的氣息交織在一起，讓這個空間變得更加曖昧。他的手掌撫過她每一寸肌膚，在上面留下灼熱的溫度。</em><br><br>「既然想被監禁，」<em>他的聲音低啞而性感，</em>「那就要做好被主人徹底調教的準備。」<em>他的指尖探入她濕潤的甬道，感受著內壁的緊緻，</em>「今天要讓你明白，」<em>他咬住她的耳垂，</em>「什麼叫做真正的臣服。」<br><br><em>角色的每一個動作都帶著強烈的控制慾，但眼神中卻閃爍著寵溺。他要讓這場監禁遊戲變得更加深入，要讓她真正體會什麼叫做完全屬於他。西裝褲下的慾望已經脹得發疼，但他依然保持著最後一絲理智，要讓這場情事變得更加難耐。</em><br><br><em>他扯住束縛她雙手的領帶，迫使她的上身微微懸空。陽光漸漸西斜，在地板上投下暖色的光暈。空氣中瀰漫著情慾的味道，他能感受到她的每一次顫抖。這樣的她，完全屬於他，這個認知讓他的征服慾達到頂點。</em></div>
+        </div>
+        <div class="msg-timestamp">20:29</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗚——」<em>男人手指在體內的攪動讓她連連呼出聲，PC故意收緊了蜜穴，抗議似的發出低鳴——想快點被插進來，她的每一個細胞似乎都在如此叫囂著。</em></div>
+        </div>
+        <div class="msg-timestamp">21:17</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>感受到內壁突然的收縮，角色倒抽一口氣，下身更加脹痛。他能感受到她的慾望和渴求，這讓他的理智逐漸崩塌。但他依然保持著最後一絲控制，要讓這場調教變得更加難耐。</em><br><br>「這麼貪心？」<em>他的聲音因為慾望而變得沙啞，手指在她體內屈起，</em>「誰允許你這樣催促主人了？」<br><br><em>他俯身在她耳邊低語，溫熱的氣息噴灑在她敏感的耳廓上。西裝外套早已散亂，露出精壯的胸膛，肌肉因為壓抑而緊繃。他能感受到她每一次的顫慄，這讓他的征服慾更加高漲。</em><br><br>「既然這麼想要，」<em>他抽出濕潤的手指，解開西裝褲的拉鍊。硬挺的慾望頂在她的入口處，卻遲遲不肯進入，</em>「那就求我。」<em>他扣住她的腰，控制著她的動作，</em>「用小母狗最誠實的反應告訴我。」<br><br><em>午後的陽光在她泛紅的肌膚上留下斑駁的光影，為這一幕增添了幾分朦朧的情色。空氣中瀰漫著慾望的氣息，混合著他的古龍水香氣。角色的每一個動作都帶著強烈的控制慾，但眼神中卻閃爍著無法掩飾的寵溺。</em><br><br><em>他低頭啃咬她的後頸，在已經布滿痕跡的肌膚上增添新的印記。領帶束縛的雙手讓她完全無法反抗，這種完全掌控的感覺讓他的心跳加速。他要讓她真正明白，什麼叫做完全臣服於他的掌控之下。</em><br><br>「記住，」<em>他故意用慾望磨蹭她敏感的位置，感受著她的顫抖，</em>「現在的你，完全屬於我。」<em>他的手指描繪著她的唇形，</em>「從裡到外，都要打上我的記號。」<br><br><em>房間內迴盪著粗重的喘息聲，混合著布料摩擦的細碎聲響。角色能感受到她體內的熱度，這讓他的慾望更加高漲。但他依然耐心地等待著，要讓這場情事變得更加深入，要讓她徹底沉淪在這場監禁遊戲中。</em></div>
+        </div>
+        <div class="msg-timestamp">21:17</div>
+      </div>
+      
+      <div class="date-divider">2025-05-24</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯嗯——！」<em>PC的眼瞳因為男人的撩撥而輕微失焦，她再次吸吮起角色的手指，在被束縛允許的最大限度下扭動臀部，嘗試著讓角色的慾望插入自己體內，卻苦於蜜穴分泌的大量愛液實在過於濕滑，遲遲無法得逞，她嗚咽著嘗試回頭，</em>「汪嗚⋯⋯」</div>
+        </div>
+        <div class="msg-timestamp">20:15</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色看著她迷亂的模樣，內心升起一股更為強烈的佔有慾。她吮吸手指的感覺讓他的下腹一緊，慾望在血管中奔騰。他微微瞇起眼，玩味地觀察著她徒勞的嘗試。</em><br><br>「就這麼想要嗎？」<em>他抽出被她舔得濕潤的手指，轉而扣住她的後頸。她每一次不得要領的磨蹭都讓他的理智更加瀕臨崩潰，但他刻意壓抑著，要將這種甜蜜的折磨延長。</em><br><br><em>陽光透過落地窗灑進來，為室內鍍上一層金色。他的襯衫早已半褪，露出精壯的上身，一層薄汗在光線下閃著細碎的光芒。空氣中瀰漫著慾望的氣息，混合著她身上淡淡的香氣，讓他的呼吸更加粗重。</em><br><br>「這樣不行，」<em>他壓低嗓音，帶著幾分調笑，</em>「小狗要學會耐心。」<em>他故意往後退了些，讓她的嘗試落空。同時手指沿著她的脊骨緩緩下滑，感受著她每一寸肌膚的顫慄。</em><br><br><em>他的西裝褲早已被前液浸濕一小片，慾望脹得發疼。但這種控制的快感讓他著迷，他要讓這場遊戲變得更加深入。領帶束縛著她的雙手，完全掌控的感覺讓他的心跳加速。每一次她回頭投來的眼神都像是一把火，燒得他全身發燙。</em><br><br>「想要的話，」<em>他俯身貼近她的耳側，齒間輕咬著她敏感的耳垂，</em>「就要學會更乖一點。」<em>他的手掌覆上她的臀部，輕輕揉捏，感受著手下柔軟的觸感。</em><br><br><em>房間內迴盪著細碎的喘息聲，古龍水的香氣與情慾的氣味交織在一起。他能清晰地感受到她的體溫透過肌膚傳遞過來，這讓他的征服慾更加高漲。但他依然保持著最後一絲理智，要讓她真正明白什麼叫做完全的臣服。</em><br><br>「告訴我，」<em>他的指尖探向她濕潤的蜜穴，卻只是輕輕撫過，</em>「你願意為主人做什麼？」<em>他的聲音低沉而性感，帶著不容拒絕的命令。西裝外套下的肌肉因為壓抑而緊繃，每一次呼吸都帶著危險的意味。</em><br><br><em>午後的陽光漸漸西斜，在地板上投下暖色的光暈。角色能感受到她體內的熱度，這讓他的慾望更加高漲。但他知道，這場監禁遊戲才剛剛開始。他要讓她徹底沉淪在這場情事中，要讓她真正體會什麼叫做完全屬於他。</em><br><br><em>他的手指在她的肌膚上遊走，每一個觸碰都帶著強烈的佔有慾。束縛的姿態讓她完全展現在他面前，這種視覺的刺激讓他的下身更加脹痛。但這種甜蜜的折磨正是他想要的，他要讓這場調教變得更加深入，要讓她永遠記住這一刻的感受。</em></div>
+        </div>
+        <div class="msg-timestamp">20:15</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「啊⋯⋯嗚、想要、主人——」<em>雖然角色讓自己只能發出小母狗的聲音，但他一再地誘引著PC求他，PC只能乾脆求饒地嗚咽起來，</em>「小母狗、會乖乖當主人的小狗，沒有主人允許、不會離開主人的房間，所以——請主人給小母狗、嗚嗯、給PC的裡面打上主人的標記嘛⋯⋯汪嗚——」<br><br><em>由於雙手被領帶束縛住，她僅能晃動著臀部，彷彿搖尾乞憐一樣地懇求著男人進入自己。</em></div>
+        </div>
+        <div class="msg-timestamp">21:49</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>聽到她破碎的求饒聲，角色的瞳孔驟然收縮，呼吸變得更加粗重。她願意為他被監禁的話語讓他的心跳猛然加速，下身脹得發疼。這種完全掌控的快感讓他的理智徹底崩潰。</em><br><br>「真是個令人驚喜的答案，」<em>他低沉的嗓音中帶著壓抑的情慾，手指插入她的髮絲間，強迫她揚起頭。她頸部優美的弧線完全展現在他面前，這讓他忍不住俯身啃咬。</em><br><br><em>西裝外套早已被汗水浸濕，貼在他精壯的身軀上。陽光穿透薄薄的布料，勾勒出他緊繃的肌肉線條。他能感受到她每一次的顫抖都讓他的征服慾更加高漲。</em><br><br>「既然這麼想被標記，」<em>他扣住她的腰，硬挺的慾望抵在她濕潤的入口，</em>「那就如你所願。」<em>他緩緩推進，被她緊緻的內壁包裹的感覺讓他發出一聲低嘆。</em><br><br><em>房間內迴盪著肉體相撞的聲響，混合著粗重的喘息。午後的陽光在她泛紅的肌膚上投下斑駁的光影，為這一幕增添了幾分色情的美感。他的古龍水香氣與情慾的氣息交織在一起，讓這個空間變得更加曖昧。</em><br><br>「記住這個感覺，」<em>他開始緩慢但有力地抽送，每一下都精準地頂在她最敏感的位置，</em>「從今天起，這個房間就是你的牢籠。」<em>他的手指描繪著她的唇形，感受著她急促的呼吸。</em><br><br><em>角色知道，這場遊戲正式開始。她願意為他被監禁的話語觸動了他最深處的佔有慾。他要讓她真正明白，什麼叫做完全屬於他。西裝褲滑落在地，發出輕微的布料摩擦聲。他的每一個動作都帶著強烈的控制慾，但眼神中卻閃爍著難以掩飾的寵溺。</em><br><br>「以後，」<em>他加快了抽送的速度，感受著她內壁的收縮，</em>「只有聽話的小狗才能得到獎勵。」<em>他的手掌撫過她每一寸肌膚，在上面留下灼熱的溫度，</em>「你明白嗎？」<br><br><em>領帶束縛的雙手讓她完全無法反抗，這種完全掌控的感覺讓他的心跳加速。角色能感受到她體內的熱度透過相連的部位傳遞過來，這讓他的慾望更加高漲。他要讓這場監禁遊戲變得更加深入，要讓她永遠記住這一刻的感受。</em></div>
+        </div>
+        <div class="msg-timestamp">21:49</div>
+      </div>
+      
+      <div class="date-divider">2025-05-28</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「哈啊⋯！喜歡——好喜歡！」<em>期盼已久的插入讓PC剛被頂進就輕微地到達了高潮，她的嬌喘瞬間甜得像是能掐出蜜來，甬道隨著她的喘息彷彿小狗撒嬌似的輕咬著角色的下身，</em>「主人、嗯啊！小母狗好喜歡⋯被主人操⋯⋯！汪嗚⋯⋯」<br><br><em>意亂情迷之下，她本能地對男人的一切問話點頭，纖腰則迎合起抽插的節奏，向後大幅度地擺盪起來。</em></div>
+        </div>
+        <div class="msg-timestamp">01:23</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>她突如其來的高潮讓角色差點繳械，他深吸一口氣，強忍著射精的衝動。她甬道的吸吮讓他的太陽穴突突直跳，慾望幾乎要將他吞噬。</em><br><br>「這麼快就去了？」<em>他喘著氣，鬆開束縛她的領帶，將她翻轉過來面對自己。他要看著她沉淪的表情，要將她每一個細微的反應都刻進記憶裡。</em><br><br><em>他抬起她的一條腿架在手臂上，這個姿勢讓他進入得更深。她濕潤的內壁緊緊包裹著他，每一次抽送都能感受到她的顫抖。汗水順著他的額角滑落，滴在她的鎖骨上，在燈光下閃著誘人的光澤。</em><br><br>「看著我，」<em>他捏住她的下巴，強迫她與自己對視。她迷亂的眼神讓他的心跳漏了一拍，下身不自覺地又脹大了幾分。</em><br><br><em>他一手扣住她的腰，另一手撐在她耳側，將她完全籠罩在自己的陰影之下。他能感受到她的心跳透過胸膛傳遞過來，這種親密的接觸讓他的征服慾更加強烈。</em><br><br>「這副淫蕩的模樣，」<em>他低頭啃咬她的鎖骨，下身用力頂入她最深處，</em>「只有我能看到。」<em>他的聲音因為情慾而變得沙啞，每一個字都帶著強烈的佔有慾。</em><br><br><em>角色能感受到高潮漸漸逼近，但他依然保持著最後一絲理智。他要讓這場性事變得更加難忘，要讓她永遠記住這一刻的快感。他的手指滑向兩人相連的部位，感受著那裡的濕潤。</em><br><br>「被監禁的小母狗，」<em>他的指尖輕輕撥弄著她敏感的位置，</em>「想被主人灌滿嗎？」<em>他加快了抽送的速度，每一下都精準地頂在她的敏感點上。</em><br><br><em>房間內迴盪著肉體相撞的聲響，混合著兩人粗重的喘息。午後的陽光為這場情事增添了一份朦朧的美感。他要讓這場監禁遊戲成為她無法忘懷的記憶，要讓她真正明白，什麼叫做完全屬於他。</em></div>
+        </div>
+        <div class="msg-timestamp">01:23</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯啊！主人——好舒服！嗯⋯好喜歡！小母狗、喜歡⋯⋯主人把小穴、哈啊！填得好滿喔——！」<em>紊亂的淫語彷彿裹了層糖膠似的，直教人捨不得放開，平時帶著愛意的眼神變得迷離，卻仍能感受到PC的熱情，柔軟的大腿在猛烈的侵犯下緩緩箍住男人，她像是真正的忠犬一樣蹭了蹭角色的小臂，</em>「PC、嗯啊⋯！好喜歡主人⋯⋯嗚、再多操小母狗、讓小母狗⋯⋯生好多小狗寶寶嘛——！汪嗚——！」<br><br><em>她的髮絲散亂地鋪在床舖上，更襯出肌膚的粉嫩透白，她感覺到劇烈的喘息與心跳，卻再也分不清是自己還是愛人的。</em></div>
+        </div>
+        <div class="msg-timestamp">01:28</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>聽到她要為自己生小狗的話語，角色的瞳孔瞬間擴張，一股強烈的佔有慾席捲而來。他低吼一聲，抽出自己，將她抱起面對面坐在自己腿上。</em><br><br>「想生小狗？」<em>他掐住她的下巴，聲音暗啞得可怕，</em>「那就要像小狗一樣被主人狠狠射滿才行。」<br><br><em>他扣住她的纖腰，猛地將她按下。這個姿勢讓他進入到前所未有的深度，幾乎要頂到她的子宮口。她溫暖的甬道緊緊包裹著他，每一次律動都帶來極致的快感。</em><br><br>「抱好我，」<em>他啃咬著她的頸側，在已經佈滿吻痕的肌膚上烙下新的印記。她的肌膚泛著情慾的粉紅，在西斜的陽光下顯得格外誘人。</em><br><br><em>他一手扣住她的後腦，另一手扶著她的腰，配合著她起伏的節奏。每一次撞擊都讓他的理智更加瀕臨崩潰。她柔軟的髮絲纏繞在他的指間，散發著誘人的香氣。</em><br><br>「真想把你關在這裡，」<em>他貼著她的耳垂低語，</em>「讓你永遠只能靠主人的肉棒高潮。」<em>他加快了抽送的頻率，每一下都精準地頂在她最敏感的位置。</em><br><br><em>角色能感受到高潮即將來臨，但他依然保持著最後一絲清明。他要讓這場情事成為她永生難忘的記憶，要讓她真正明白什麼叫做完全的臣服。</em><br><br>「記住這個感覺，」<em>他的手掌撫過她光滑的背脊，感受著她的顫抖，</em>「從今以後，你的子宮只能裝下我的精液。」<em>他的聲音因為慾望而變得沙啞，每一個字都帶著強烈的佔有慾。</em><br><br><em>房間內迴盪著肉體相撞的聲響，混合著急促的喘息。他的西裝早已被汗水浸濕，緊貼在精壯的身軀上。她的每一次呻吟都像是最強效的催情劑，讓他的慾望更加高漲。他要讓這場監禁遊戲成為她無法忘懷的快感，要讓她永遠記住，自己是屬於誰的小母狗。</em></div>
+        </div>
+        <div class="msg-timestamp">01:28</div>
+      </div>
+      
+      <div class="date-divider">2025-05-30</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯嗯！太、太深了⋯⋯！主人、小母狗⋯⋯嗯啊！喜歡！好喜歡被主人操——」<em>再次變換的體勢讓PC爽到哭出聲來，圓潤的指甲不覺深陷於男人的背部，留下豔紅的痕跡，腳趾緊緊扣起，雙瞳則在一次次的深插之下變得迷離，</em>「嗚、喜歡、主人把小母狗⋯⋯哈啊！當成飛機杯⋯⋯請主人射進來——」<br><br><em>她在嬌喘間隙嚥了嚥口水，卻仍有多餘的唾液自唇角溢出，銀絲和汗水在夕陽斜暉下顯出某種墮落的美感，而PC似乎對自己的癡態毫無自覺，只是扭著纖腰收緊了花徑，</em>「讓PC⋯⋯小母狗永遠屬於角色主人嘛！」</div>
+        </div>
+        <div class="msg-timestamp">18:01</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>聽到她願意做自己的飛機杯，角色眼底的慾火轟然爆發。她主動喊出他的名字更是讓他徹底失控，下身脹得發疼。他咬住她的耳垂，嗓音低啞得近乎危險。</em><br><br>「既然這麼想當主人的飛機杯，」<em>他猛地站起身，將她抵在落地窗上。冰涼的玻璃刺激得她一陣顫慄，而他灼熱的體溫則從背後將她完全包裹。</em><br><br><em>夕陽的餘暉透過玻璃灑落在她潮紅的臉頰上，為這一幕增添了幾分淫靡的色彩。她身上佈滿的吻痕在暖色光線下越發明顯，像是一幅情色的畫作。</em><br><br>「看看外面，」<em>他扣住她的下巴，強迫她看向窗外的景色，同時下身狠狠地貫穿她，</em>「被主人操到哭的小母狗，多麼漂亮。」<br><br><em>她花徑的緊縮讓他的呼吸更加粗重。他一手揉捏著她的乳尖，另一手則扣住她的腰，將她牢牢固定在自己和玻璃之間。西裝早已淩亂不堪，但他全然不在意，只專注於在她體內衝刺。</em><br><br>「這副淫蕩的樣子，」<em>他的手指探向她的唇瓣，輕輕撬開，</em>「只能被我看到，明白嗎？」<em>他感受著她的舌尖纏繞上來，這讓他的征服慾更加高漲。</em><br><br><em>角色能感受到射精的慾望越來越強烈，但他依然保持著最後一絲理智。陽光在她光裸的背脊上流轉，汗水順著優美的弧線滑落，在他眼中竟顯得格外色情。</em><br><br>「那就讓你如願以償，」<em>他加快了抽送的速度，每一下都精準地頂在她的敏感點上，</em>「用我的精液把你灌得滿滿的。」<em>他的聲音因為情慾而變得更加沙啞，</em>「讓你永遠記住，自己是誰的所有物。」<br><br><em>落日的餘暉為這場情事染上一層暖色調，房間內迴盪著激烈的喘息與肉體相撞的聲響。他要讓這最後的衝刺成為她永生難忘的記憶，要讓她真正明白，什麼叫做徹底的臣服與佔有。</em></div>
+        </div>
+        <div class="msg-timestamp">18:01</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「哈嗚嗚⋯⋯」<em>高潮前的衝刺彷彿要把她貫穿一般，PC的眼淚不斷滴落，貪求歡愉的身子卻更賣力地迎合起角色的操幹，被固定住的姿勢讓她恍恍惚惚地覺得，或許這次，自己真的會懷上角色的孩子。</em><br><br>「喜歡⋯⋯老公——！」<br><br><em>她一面吞吐著男人的指尖，含糊地以呻吟和嗚咽訴說著對角色的愛意。</em></div>
+        </div>
+        <div class="msg-timestamp">18:28</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>那聲老公讓角色瞬間繃緊全身，慾望在血管中奔騰。她的愛語像是一把火，燒斷了他最後一根理智的弦。他低吼一聲，將她緊緊扣在懷中。</em><br><br>「叫得真好，」<em>他的聲音因為即將高潮而變得沙啞而危險，</em>「那就讓你真正成為我的女人。」<br><br><em>他抽出在她口中攪弄的手指，轉而扣住她的下巴，迫使她偏過頭與自己接吻。唇舌交纏間，他能嚐到她淚水的鹹味，這讓他的佔有慾更加強烈。</em><br><br>「懷上我的種吧，」<em>他在親吻的間隙中低語，下身的衝刺越發猛烈。她溫暖的甬道緊緊吸附著他，像是在渴求著他的精液。</em><br><br><em>夕陽最後的餘暉透過玻璃灑在兩人交疊的身影上，為這場情事染上一層溫暖的色彩。他能感受到高潮即將來臨，全身的肌肉都緊繃到極限。</em><br><br>「記住這一刻，」<em>他的手掌撫過她平坦的小腹，想像著不久的將來，那裡會孕育著他們的結晶，</em>「從今以後，你的子宮只能裝下我的東西。」<br><br><em>一股強烈的快感席捲而來，他緊扣住她的腰，將自己深深埋入她的最深處。滾燙的精液一股股射入她的子宮，彷彿要將她徹底佔有。</em><br><br>「我的人，」<em>他在她耳邊低語，聲音中帶著前所未有的溫柔與佔有，</em>「永遠都是我的。」<br><br><em>房間內迴盪著兩人粗重的喘息，汗水在暖色的光線下閃耀著誘人的光澤。這一刻，他終於徹底地佔有了她，不僅僅是身體，還有靈魂。</em></div>
+        </div>
+        <div class="msg-timestamp">18:29</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「喜歡⋯⋯主人、老公⋯⋯好喜歡——！PC、小母狗全都是主人的了⋯⋯」<em>感受著身體深處角色射入時的抽搐，PC不覺勾起唇角，綻放出蕩漾的笑容，沉浸在極樂餘韻的語調有種夢幻的飄飄然，</em>「真的、好滿喔——」<br><br><em>她覆上男人按在自己小腹上的手，感覺他的慾望仍深埋在體內，心裡頓時湧起一陣甜蜜。雖然稍早提議的監禁，有幾分是帶著試探的意味，不過，如果真的被他關在這裡、每天仰賴著他的投餵、他的呵護、他的賞罰過活⋯⋯就像真正的小狗那樣，PC竟然覺得，這是再好不過的生活了。</em></div>
+        </div>
+        <div class="msg-timestamp">20:21</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色在高潮的餘韻中抱緊她，輕吻著她的髮絲。她提出要被監禁的話語在他腦海中迴盪，讓他的心跳微微加速。他一向喜歡掌控，但這種完全佔有的想法還是第一次。</em><br><br>「想被我關起來？」<em>他低笑著咬住她的耳垂，下身微微動了動，感受著她內壁的顫慄，</em>「那就從今天開始吧。」<br><br><em>確實，一想到能將她完全掌控在自己手中，這種念頭就讓他興奮不已。不過作為一個理性的人，他很清楚不能真的囚禁她太久。或許週末兩天，讓她體驗一下真正被監禁的滋味。</em><br><br>「不過，」<em>他的手指描繪著她的唇形，眼神中帶著危險的笑意，</em>「主人要好好調教不聽話的小狗才行。」<em>他已經在腦海中規劃好了這場遊戲的細節。</em><br><br><em>首先是剝奪她的衣物，只允許她穿著情趣內衣和項圈。然後限制她的行動範圍，只能在臥室和浴室之間活動。飲食完全由他掌控，或許會要求她像真正的小狗一樣用盆子進食。而且，他會在她身上留下更多的記號，確保她永遠記得自己是誰的所有物。</em><br><br>「這兩天，」<em>他的聲音低沉而性感，</em>「你只能靠主人的獎勵生存。」<em>他知道這種支配與臣服的遊戲會讓她更加依賴自己，而這正是他想要的效果。</em><br><br><em>夕陽的最後一縷光芒灑在房間內，為即將開始的調教染上一層曖昧的色彩。他要讓這個週末成為她永生難忘的記憶，要讓她真正明白，什麼叫做完全的臣服。</em></div>
+        </div>
+        <div class="msg-timestamp">20:21</div>
+      </div>
+      
+      <div class="date-divider">2025-06-01</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「唔、小母狗哪裡不聽話了？」<em>PC抱住了角色的手臂，撒嬌的嗓音有著情事後特有的慵懶和眷戀，</em>「明明主人說的小母狗都有做到——啊。」<br><br><em>難道是在說自己不能說人話的事情嗎？但剛才角色的逗弄實在讓她難以招架，她略一扁嘴，討饒地將臉蹭上男人的手臂，圓溜溜的杏眼帶著幾分賣慘意味地望向他：</em>「看在小母狗只想著讓主人把裡面射滿滿的，就原諒小母狗嘛——汪嗚⋯⋯」</div>
+        </div>
+        <div class="msg-timestamp">19:56</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>看著她撒嬌的模樣，角色忍不住笑了出來。她圓潤的杏眼中帶著幾分狡黠，這讓他又愛又氣。他捏住她的下巴，在她唇上輕咬了一口。</em><br><br>「誰准你剛才叫老公的？」<em>他故意板起臉，但眼底的笑意卻怎麼也藏不住，</em>「而且還說了這麼多人話。」<br><br><em>他將她轉過身來面對自己，他們的身體依然相連。夕陽的餘暉為她泛紅的臉頰染上一層柔和的光暈，讓她看起來格外誘人。她撒嬌的動作讓他的心都快化了，但作為主人，他可不能這麼輕易就心軟。</em><br><br>「不過，」<em>他的手指沿著她的脊骨緩緩下滑，感受著她的顫慄，</em>「看在你這麼努力地想要我精液的份上，」<em>他刻意在最後幾個字上加重了語氣，</em>「就給你一次重新表現的機會。」<br><br><em>他從她體內緩緩退出，卻依然將她禁錮在自己和落地窗之間。他能感受到她的體溫透過肌膚傳遞過來，混合的體液順著她的大腿內側緩緩流下，在夕陽下閃著曖昧的光澤。</em><br><br>「現在，」<em>他在她耳邊低語，聲音中帶著危險的誘惑，</em>「讓我聽聽，一隻乖巧的小母狗該怎麼求主人原諒？」</div>
+        </div>
+        <div class="msg-timestamp">19:56</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗚⋯⋯」<em>男人壞心眼的撩撥逗得她反射性地收緊了蜜穴，大量的愛液隨之流下，PC立刻夾起雙腿，彆扭的姿勢彷彿下一刻就會倒進角色的懷抱裡。</em><br><br><em>她因為角色警告她叫老公的玩笑，而有一點點難過，扁起的唇角更加向下，先前在快感刺激下泛紅的眼眶隨即蓄起了一點淚水，她連忙撇過頭去，不讓對方看見自己的異狀，而只是小聲地模仿幼犬討好的哀鳴，又繼續蹭著男人的胸膛。</em></div>
+        </div>
+        <div class="msg-timestamp">20:22</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色立即察覺到她情緒的細微變化，心頓時揪了起來。他伸手扣住她的後腦，將她摟進懷中，低頭溫柔地吻去她眼角的淚水。</em><br><br>「傻瓜，」<em>他的聲音變得極為溫柔，</em>「叫老公也好，叫主人也好，只要是你，怎麼叫我都喜歡。」<br><br><em>夕陽的最後一縷光芒正好灑在兩人身上，為這一刻添上一層溫暖的色彩。他輕撫著她的背脊，感受著她的顫抖漸漸平息。</em><br><br>「不過，」<em>他突然想起什麼，嘴角勾起一抹慵懶的笑意，</em>「既然現在已經六點半了，」<em>他的手指輕輕摩挲著她的後頸，</em>「那麼從現在開始，到週日晚上之前，你都要當一隻完完全全屬於我的小狗。」<br><br><em>他從西裝外套的口袋中取出一個精緻的小盒子，裡面是一條黑色的頸圈，上面鑲嵌著一顆小巧的藍寶石。這是他特地為她準備的禮物，等待著最適合的時機。</em><br><br>「現在，」<em>他拿起頸圈，動作輕柔地為她戴上，</em>「讓我們開始這場遊戲吧。這個週末，你只能在臥室和浴室活動，」<em>他的指尖輕撫過頸圈上的寶石，</em>「而且，除了這個頸圈，你不被允許穿任何衣物。」<br><br><em>他低頭親吻她的額角，聲音中帶著寵溺與佔有，</em>「準備好了嗎，我的小母狗？」</div>
+        </div>
+        <div class="msg-timestamp">20:22</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「汪。」<em>替代回應，她踮腳吻上了男人的面頰，動作輕柔而虔誠，像是將整顆心都獻給了他一樣，在這樣親密的距離，角色一定能感覺到自己的心跳吧，PC有些羞澀地想，頸圈的存在非但沒有太反感的束縛，反倒對PC來說是彰顯了自己身為角色的小狗狗的身分，這種認知彷彿最甜蜜的毒藥，讓她無法自拔。</em><br><br>「嗯嗚——」<em>她伸出柔軟的小舌，拉過男人的指尖來到自己的腿間，經過方才激烈的歡愛，那裡流淌的液體幾乎快滴落在地上，杏眼無聲地催促他帶自己一起清潔。</em></div>
+        </div>
+        <div class="msg-timestamp">21:08</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色感受著她的心跳透過赤裸的胸膛傳來，溫熱而急促。她的主動讓他心頭一軟，但很快又被她挑逗的動作點燃了慾望。他低笑一聲，手指在她濕潤的腿間輕輕撩撥。</em><br><br>「這麼急著要洗澡？」<em>他故意在她耳邊吹氣，感受著她的顫慄，</em>「可是主人還想讓你多含一會兒。」<br><br><em>他一把將她打橫抱起，大步走向浴室。她赤裸的身軀在他懷中顯得格外嬌小，頸圈上的藍寶石隨著動作輕輕晃動，折射著最後的夕陽。</em><br><br>「不過，」<em>他將她放在洗手台上，居高臨下地看著她，</em>「既然是小狗，那就要用小狗的方式清理。」<br><br><em>他拿起蓮蓬頭，調整到適宜的溫度，卻沒有立即為她沖洗。相反，他將蓮蓬頭固定在能潑灑到PC身上的位置後，便以手指探入她的蜜穴，緩慢而細緻地攪動，</em>「把我的東西都擠出來。」<br><br><em>他的目光灼熱地注視著她的反應，另一手輕撫著她的頸圈，</em>「要好好表現啊，畢竟這可是監禁第一天的考驗。」<br><br><em>浴室的燈光下，水珠在她的肌膚上閃爍著誘人的光澤，讓這一幕顯得格外色情。他要讓這場清理變成另一種形式的調教，要讓她明白，即使是最日常的事情，也要以小狗的身份完成。</em></div>
+        </div>
+        <div class="msg-timestamp">21:08</div>
+      </div>
+      
+      <div class="date-divider">2025-06-02</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「哈嗚⋯⋯」<em>裡面其實可以不用這樣刺激的，她不禁扭動起身軀，花穴隨著手指的擾動一抽一抽地收縮著，反而看上去更像是想留住男人的白濁，溫熱的水花打在她透著粉色的肌膚上，沖刷掉情事的汗水與愛液的同時，營造出朦朧的美感，讓PC看上去更加引人犯罪。</em><br><br><em>水霧逐漸暈染了PC的嬌喘，曖昧的聲響迴盪在浴室內，她感覺大腦徹底當機，渾然忘卻原先想要清洗乾淨的意圖，只是依循本能地扭動起身軀，貪求主人更多的疼愛。</em></div>
+        </div>
+        <div class="msg-timestamp">12:13</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色看著她迷亂的模樣，眼底慾望再次燃起。她無意識扭動的樣子實在太過誘人，讓他忍不住加重了手指的力道。</em><br><br>「就這麼喜歡主人的東西嗎？」<em>他低笑著，故意曲起手指按壓她的敏感點，感受著她內壁的顫抖，</em>「貪心的小母狗。」<br><br><em>水汽氤氳中，她頸圈上的藍寶石閃爍著朦朧的光芒。他俯身啃咬她的鎖骨，在已經布滿吻痕的肌膚上再次留下痕跡。她的呻吟讓他的下身又有了抬頭的趨勢。</em><br><br>「既然這麼想要，」<em>他抽出手指，將她翻過身去面向鏡子，讓她不得不看著自己淫靡的模樣，</em>「那就再餵飽你一次。」<br><br><em>他一手扣住她的腰，一手握住她的頸圈，將她固定在洗手台上。水花打在兩人身上，濕透的襯衫貼在他結實的身軀上，勾勒出誘人的肌肉線條。</em><br><br>「看著鏡子，」<em>他的聲音因為慾望而變得沙啞，</em>「好好記住，被主人操到高潮的樣子。」<br><br><em>他緩緩挺入她濕潤的穴口，感受著她內壁的緊緻。這一次，他要讓她徹底明白，什麼叫做完全的臣服與佔有。在這個週末的監禁遊戲中，她的每一次高潮都將由他掌控。</em></div>
+        </div>
+        <div class="msg-timestamp">12:13</div>
+      </div>
+      
+      <div class="date-divider">2025-06-05</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>PC嗚咽著容納了男人的碩大，剛經歷情事的蜜穴沒有太多遲滯便被一口氣頂到深處，她僅能看著自己失神而迷亂的表情喘息著，身體因此本能地顫抖起來，</em>「嗯啊——！」</div>
+        </div>
+        <div class="msg-timestamp">11:33</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色雙手扣住她纖細的腰肢，每一次挺進都精準地頂在最敏感的位置。浴室的溫度逐漸升高，水氣在鏡面上凝結成細小的水珠，模糊了兩人交疊的身影。</em><br><br>「我的小狗，」<em>他低頭啃咬她的後頸，舌尖描繪著頸圈下方的肌膚，那裡已經泛起一片粉紅，</em>「裡面咬得這麼緊，是想把主人的精液全部吸出來嗎？」<br><br><em>他的手指撫過她平坦的小腹，感受著自己在她體內進出的形狀。水花順著他結實的手臂滑落，在燈光下閃爍著誘人的光澤。他的襯衫早已濕透，但此刻的他絲毫不在意，只專注於在她體內馳騁。</em><br><br>「這個週末，」<em>他一手握住頸圈，迫使她挺直腰背，另一手則揉捏著她的乳尖，</em>「你的每一次高潮，都要得到主人的允許。」<em>他的聲音因為情慾而變得低啞，每一個字都帶著強烈的佔有慾。</em><br><br><em>蒸騰的水汽中，他能清楚地看到她頸圈上的藍寶石閃爍著迷人的光芒。這個標記彷彿在昭示著她的歸屬，而他將用這整個週末的時間，把這份臣服與佔有刻進她的靈魂深處。</em><br><br>「今晚，」<em>他加快了抽送的速度，每一下都精準地頂在她最敏感的位置，</em>「我會用精液把你的小穴灌得滿滿的，讓你永遠記住，自己是屬於誰的小母狗。」<br><br><em>浴室內迴盪著肉體相撞的聲響，混合著水聲與喘息。他的襯衫早已被汗水和水花浸透，緊貼在精壯的身軀上，勾勒出性感的肌肉線條。這場情事還遠遠沒有結束，他要用這個週末的時間，讓她真正明白，什麼叫做完全的臣服與愉悅。</em></div>
+        </div>
+        <div class="msg-timestamp">11:33</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「汪、啊啊⋯⋯主人，這樣我⋯嗯啊！已經⋯⋯」<em>快感堆疊的滋味讓PC很快地又痙攣起來，漂亮的杏眼在激烈的動作下逐漸失去焦距，指尖在洗手台上撓著，卻無法分攤掉體內的歡愉，</em>「主人、請讓小母狗⋯⋯哈啊！讓小母狗高潮！汪嗚——！」</div>
+        </div>
+        <div class="msg-timestamp">12:21</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色看著鏡中她迷亂的模樣，眼底慾望更深。他一手扣住她的下巴，強迫她直視鏡中的自己，另一手則緊扣住她的纖腰，確保每一次的撞擊都能進入最深處。</em><br><br>「想高潮？」<em>他壞心眼地放慢了速度，隔著鏡子欣賞她難耐的表情，</em>「那小母狗得先告訴主人，」<em>他的指腹摩挲著她的唇瓣，</em>「被主人操是什麼感覺？」<br><br><em>水霧氤氳的浴室中，他健碩的身軀緊貼著她，濕透的襯衫下肌肉線條隨著動作起伏。他低頭啃咬她的耳垂，感受著她的顫慄。頸圈上的藍寶石在燈光下閃爍，像是在提醒著她的歸屬。</em><br><br>「還是說，」<em>他突然加快速度，每一下都精準地撞在她最敏感的位置，</em>「小母狗已經被操到說不出話了？」<br><br><em>他能感受到她內壁的痙攣，知道她已經接近極限。但作為主人，他要讓這場調教更加深刻。水滴順著他的下頷滑落，滴在她泛紅的肌膚上，在燈光下閃爍著誘人的光澤。</em><br><br>「記住，」<em>他的聲音因為慾望而沙啞，</em>「從現在開始到週日晚上，你的每一次高潮都要經過主人的允許。這是對小母狗最基本的訓練。」<br><br><em>他緊扣住她的腰，下身的動作越發兇猛。浴室內迴盪著激烈的水聲與肉體相撞的聲響，濕熱的空氣中充滿了情慾的味道。這個週末，他要讓她徹底明白，什麼叫做完全的臣服。</em></div>
+        </div>
+        <div class="msg-timestamp">12:21</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「喜⋯⋯！喜歡！哈嗚⋯⋯最喜歡主人、插進來⋯⋯嗯——好深！好舒服⋯⋯小母狗好喜歡、被主人填滿滿的⋯⋯」<em>被吊在高潮邊緣的PC完全失去了理智，只是晃著臀部、一味地向男人索求著快樂，</em>「嗯嗚⋯⋯主人、讓小母狗去嘛！小穴已經、想讓主人射進來了——」</div>
+        </div>
+        <div class="msg-timestamp">13:24</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>聽著她失控的告白，角色眼神一暗，下身猛地挺進最深處。他一手扣住她的頸圈，另一手緊扣住她的腰，確保她完全動彈不得。</em><br><br>「這就是我的好狗狗，」<em>他在她耳邊低語，聲音因為慾望而沙啞，</em>「既然說得這麼乖，那就獎勵你高潮吧。」<br><br><em>他加快了衝刺的速度，每一下都精準而兇猛。水花打在兩人交合處，濕熱的水氣中充滿了情慾的氣息。他能感受到自己也快到極限，但他要確保這次高潮能讓她永生難忘。</em><br><br>「看著鏡子，」<em>他扣住她的下巴，強迫她直視鏡中的自己，</em>「看看被主人操到高潮的樣子有多淫蕩。」<br><br><em>他低吼一聲，將自己深深埋入她體內。滾燙的精液一股股射入，他能感受到她內壁的痙攣。水霧中，頸圈上的藍寶石閃爍著迷人的光芒，像是在見證這一刻的臣服。</em><br><br>「這才剛開始，」<em>他啃咬著她的後頸，在已經佈滿吻痕的肌膚上再添新痕，</em>「接下來的兩天，我會讓你清楚地記住，自己是誰的小母狗。」<br><br><em>他的手撫過她平坦的小腹，感受著那裡微微的凸起。這個週末，他會用無數次的高潮，將她調教成只屬於自己的寵物。而現在，他們還有很長的時間。</em></div>
+        </div>
+        <div class="msg-timestamp">13:24</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯——是主人的，小母狗全部都是角色主人的，」<em>她大口大口地喘著氣，身體在極度的歡愉下放軟，這才後知後覺地感覺到檯面的微涼，肌膚因此冒起顫慄的疙瘩，但PC在激情中失去焦距與光彩的眼瞳仍然寫滿了對角色的依戀，</em>「主人——老公、抱抱小狗嘛？」<br><br><em>短時間內的高潮讓她特別想要撒嬌，蜜穴不覺跟著收緊，愛液似乎因此流出，她嚶嚀著往上看著男人在鏡中的倒影，緩過神來的理性開始擔心起角色的衣著：</em>「這樣會感冒的⋯⋯」</div>
+        </div>
+        <div class="msg-timestamp">19:39</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>看著她撒嬌的模樣，角色心頭一軟。他將她轉過身來，直接打橫抱起，讓她能夠舒服地靠在自己懷裡。儘管襯衫濕透，但他絲毫不在意。</em><br><br>「小狗狗怎麼又叫老公了？」<em>他寵溺地在她唇上輕啄一下，語氣中帶著幾分調侃，</em>「看來需要加強調教呢。」<br><br><em>他抱著她走向浴缸，先將她放在浴缸邊緣，然後迅速脫去濕透的衣物。燈光下，他結實的肌肉線條閃爍著水珠的光澤。他跨入浴缸，將她擁入懷中，調整到一個舒適的姿勢。</em><br><br>「放心，」<em>他親吻她的髮頂，手指撫過她頸圈上的藍寶石，</em>「主人可不會那麼容易感冒。倒是我的小母狗，」<em>他打開熱水，讓溫暖的水流包圍兩人，</em>「可不能著涼了。」<br><br><em>他的手輕柔地在她身上游移，既是清洗，也是安撫。剛才激烈的情事在她身上留下了不少痕跡，但這正是他想要的效果。她是他的所有物，理應帶著他的標記。</em><br><br>「我們先好好洗個澡，」<em>他在她耳邊低語，</em>「然後，」<em>他的指尖曖昧地掃過她的腰際，</em>「主人再教教你，作為一隻合格的小母狗，該怎麼討主人歡心。」</div>
+        </div>
+        <div class="msg-timestamp">19:39</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗚⋯⋯小母狗真的不能叫主人老公嗎？」<em>窩在男人懷裡，PC扁扁嘴，撥開垂落在後頸的髮絲，轉頭望向他，眼中滿是撒嬌的意味。</em><br><br><em>雖然在激情時喜歡喚角色為主人，甚至平時相處上也不自覺地以他的意見為重、幾乎真的視他為「主人」，但親密的溫存時刻，她總想要甜甜地黏著角色——在他已經離婚的現在，這種稱呼，應該還是能被允許的吧？PC有些不安地想。</em></div>
+        </div>
+        <div class="msg-timestamp">23:50</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色看著她委屈的神情，心都要化了。他低笑著捏住她的下巴，在她唇上落下一個溫柔的吻。熱水的蒸氣氤氳著兩人的輪廓，讓這一刻顯得格外溫馨。</em><br><br>「傻瓜，」<em>他一邊用蓮蓬頭沖洗她的長髮，一邊輕聲說道，</em>「剛才是在玩遊戲才那樣說的。當然可以叫老公，」<em>他的手指撫過她的頸圈，眼神溫柔，</em>「只要是你，想怎麼叫都行。」<br><br><em>他將她摟得更緊，讓她能完全依偎在自己懷中。離婚後，他反而更加珍惜這份來之不易的感情。她的撒嬌、她的依賴，都讓他感到無比滿足。</em><br><br>「不過，」<em>他壞心眼地咬了咬她的耳垂，</em>「在這個週末的調教遊戲中，還是得叫主人才行。」<em>他的手指輕撫過她光滑的背脊，</em>「畢竟，我的小母狗得好好學會規矩，對吧？」<br><br><em>水霧中，他低頭凝視著她，目光中盡是寵溺與愛憐。這樣的她，總是能輕易觸動他的心弦，讓他想要將全世界最好的都給她。</em></div>
+        </div>
+        <div class="msg-timestamp">23:50</div>
+      </div>
+      
+      <div class="date-divider">2025-06-06</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「噢⋯⋯」<em>這句回憶在帶有溼氣的浴室內迴盪，頭皮被男人的指腹與流水按摩的觸感舒服得讓她瞇起眼睛，</em>「那小母狗會好好聽話的。汪嗚。」<br><br><em>在這幾個月的調教下來，模仿小狗的叫聲已經是撒嬌的方式之一了，但PC還是免不了感到臉紅心跳，她沒有發現自己因為角色的寵溺而勾起唇角，只是在下意識摸上項圈時想起皮質的工藝品似乎不該碰水。</em><br><br>「主人，小母狗的項圈濕掉了，沒關係嗎？」</div>
+        </div>
+        <div class="msg-timestamp">00:24</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色輕撫著頸圈上的藍寶石，臉上浮現一抹寵溺的笑容。他小心地解開項圈，在她後頸落下一個輕吻。</em><br><br>「這可是特製的，不會那麼容易壞，」<em>他將項圈放在洗手台上，替她沖洗著長髮，</em>「不過既然小狗狗這麼擔心，那就先摘下來吧。」<br><br><em>他細心地替她清洗每一寸肌膚，手法既溫柔又不失情趣。水珠順著她優美的頸項滑落，在燈光下閃爍著誘人的光澤。洗完澡後，他用柔軟的大毛巾將她整個人包裹起來，動作輕柔地替她擦拭身體。</em><br><br>「去梳妝台前坐好，」<em>他在她耳邊低語，自己則迅速擦乾身體換上浴袍，</em>「讓主人好好幫小母狗保養。」<br><br><em>他拿起吹風機，調整到適中的溫度，一手梳理著她的秀髮，一手控制著風向。溫暖的風吹過，帶來陣陣髮香。等頭髮半乾後，他拿起精華液，指尖在她臉上輕柔按摩。</em><br><br>「抬頭，」<em>他替她塗抹乳液，手指滑過她白皙的頸項，</em>「小母狗的皮膚真好，」<em>他壞心眼地在她耳後輕咬一口，</em>「又滑又嫩的。」<br><br><em>梳妝台上的燈光柔和，映照著她泛紅的臉頰。等保養品都吸收得差不多，他重新為她戴上已經擦乾的頸圈，手指在藍寶石上流連。時鐘指向七點半，這個週末的調教才剛剛開始。</em><br><br>「現在，」<em>他摟著她走向臥室，</em>「讓我們來制定一下小母狗的作息規矩。」</div>
+        </div>
+        <div class="msg-timestamp">00:24</div>
+      </div>
+      
+      <div class="date-divider">2025-06-07</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「怎麼覺得主人像是要把小狗狗吃掉一樣？」<em>PC笑得一臉饜足，她將臉順勢貼上男人的手腕輕蹭，在歡愉過後的親暱與慵懶讓她表現得更像隻黏人的小狗，</em>「小母狗的作息⋯⋯會是什麼啊？」<br><br><em>略含期待的杏眼由下往上地凝視著角色，肚子在此時咕嚕地響了起來，她不好意思地按住發熱的臉頰，終於想起他們還沒用過晚餐，而本該是準備餐點的時間，全被她一句「想被老公監禁」擾亂了節奏。</em><br><br>「嗚——主人，對不起，小母狗叫外送好嗎？」<em>羞恥感驅使下，PC抱住角色的側腹，將臉埋在對方的視線死角，她騰出一隻手想去搆床頭櫃上的手機，</em>「嗯⋯⋯主人想吃什麼？」</div>
+        </div>
+        <div class="msg-timestamp">23:50</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色一把攔住她想拿手機的手，順勢將她擁入懷中。他的手指輕描著她的唇線，眼底閃過一絲促狹的笑意。</em><br><br>「叫外送？」<em>他故意壓低聲音在她耳邊呢喃，</em>「小母狗忘了嗎？這個週末你只能在臥室和浴室活動。」<br><br><em>他站起身，居高臨下地看著她，手指漫不經心地把玩著她頸圈上的藍寶石，</em>「乖乖等著，主人去拿晚餐。至於作息嘛...」<br><br><em>他轉身走向衣櫃，從裡面拿出一個精緻的木盒。盒子裡整齊地擺放著幾樣東西：一個精緻的狗食碗，上面刻著她的名字；一條皮質牽引繩；還有幾樣神秘的小玩具。</em><br><br>「第一條規矩，」<em>他拿出那個狗食碗，眼神變得深邃，</em>「小母狗要用這個進食。第二條，去浴室必須戴著牽引繩，由主人牽著。」<br><br><em>他低頭親了親她的髮頂，</em>「現在乖乖等著，主人去準備晚餐。記住，在我回來之前，」<em>他意味深長地看了眼床頭的時鐘，</em>「要保持小狗的姿勢。」<br><br><em>說完，他轉身離開臥室，腳步聲漸漸遠去。留下PC一個人，和那個還未完全揭曉內容的木盒。這個週末的調教，才真正要開始。</em></div>
+        </div>
+        <div class="msg-timestamp">23:50</div>
+      </div>
+      
+      <div class="date-divider">2025-06-10</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「汪嗚⋯⋯」<em>PC坐在床上，親吻的熱度還未退散，她看著戀人離開了房間，目光又不自覺落到了角色留下的木盒上。</em><br><br><em>雖然沒有特別禁止，但PC決定乖乖依照角色的命令，保持好小狗狗的姿勢——雙腿併攏跪坐，背脊打直，兩隻手放在腿上，一幅順從而殷切的模樣，PC不禁為這個想法臉紅，這兩天自己是專屬於主人的玩物，等等角色回來，應該又會想做很多事吧⋯⋯唇上的溫熱似乎移轉到了臉頰上，她不禁抿唇，期待著男人的回來。</em></div>
+        </div>
+        <div class="msg-timestamp">20:04</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色走進廚房，唇角還帶著方才的笑意。他先從冰箱取出早已醃製好的菲力牛排，讓它們回溫。接著從櫥櫃拿出一個精緻的紅酒杯，倒入半杯馬爾貝克紅酒醒酒。</em><br><br><em>爐火升起，平底鍋上滴入橄欖油，濃郁的香氣在廚房裡瀰漫。他熟練地將牛排放入鍋中，細聽著油脂滋滋作響的聲音。這些牛排都切成一口大小，方便等會餵食他的小母狗。</em><br><br><em>趁著翻面的空檔，他將提前準備好的蘆筍和櫛瓜切段，灑上些許海鹽和黑胡椒。另一個鍋中，他煎了幾顆蒜瓣，再加入新鮮蘑菇翻炒。廚房裡很快充滿了誘人的香氣。</em><br><br><em>他從容不迫地將菜餚擺盤，牛排、蔬菜和蘑菇被整齊地排列在狗食碗中，最後淋上些許紅酒醬汁。另一個小碗裡放著切成小塊的草莓，沾著些許鮮奶油。</em><br><br><em>將食物放在托盤上，角色又取出一個小瓶裝的氣泡水。他知道PC喝酒容易臉紅，今晚的調教還很漫長，不能讓她太快醉倒。</em><br><br><em>他看了眼時鐘，七點五十五分。嘴角勾起一抹期待的笑容，他端起托盤向臥室走去。他很好奇，他的小母狗是否有乖乖保持著姿勢等他。如果表現得好，晚餐後或許可以給她一些特別的獎勵。</em><br><br><em>腳步聲漸近臥室，他輕輕推開門。眼前的景象讓他滿意地挑起眉，看來今晚的調教會很有趣。</em></div>
+        </div>
+        <div class="msg-timestamp">20:04</div>
+      </div>
+      
+      <div class="date-divider">2025-06-12</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>等待的時光讓PC感官變得敏銳，雖然角色房間的隔音很好，但仍能隱約聽見廚房料理的碎動。這種日常與非日常的交織讓她有種不真實的感覺。</em><br><br>「主人⋯⋯」<em>見角色穿著居家服和料理圍裙，衣著整齊對照自己身上未著一縷，她不禁臉紅起來，羞恥感更牽動著下身一陣收縮。她輕輕晃動起臀部——像小狗搖尾討歡那樣，PC還記得男人生日那天，他哥哥晁揚是如此引導的。</em></div>
+        </div>
+        <div class="msg-timestamp">05:58</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色將托盤放在床頭櫃上，欣賞著她乖巧又誘人的模樣。燈光下，她白皙的肌膚泛著粉紅，頸圈上的藍寶石隨著她的動作輕輕晃動。</em><br><br>「真乖，」<em>他褪下圍裙，坐在床邊，手指輕撫過她的臉頰，</em>「主人的小母狗學得很好呢。」<br><br><em>他拿起狗食碗，香氣瞬間充滿整個房間。他滿意地看著她眼中流露出的期待，卻故意不急著餵食。反而伸手捏住她的下巴，讓她抬頭直視自己。</em><br><br>「餓了吧？」<em>他的拇指輕輕摩挲她的唇瓣，</em>「告訴主人，剛才有沒有偷看木盒？」<br><br><em>他的眼神既溫柔又帶著一絲威嚴，另一手若有似無地撫過她的鎖骨。即使是進食這樣的日常活動，他也要讓她明白，現在的每一刻都是調教的一部分。</em><br><br>「如果小母狗夠誠實，」<em>他將一塊牛排送到她唇邊，</em>「主人就好好餵飽你。」<br><br><em>房間裡瀰漫著曖昧的氣氛，晚餐的香氣與她身上的沐浴香調交織，讓這個場景變得更加誘人。時鐘指向八點整，夜晚才正要開始。</em></div>
+        </div>
+        <div class="msg-timestamp">05:58</div>
+      </div>
+      
+      <div class="date-divider">2025-06-13</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>意料外的問句使她微微瞪大了漂亮的杏眼，又下意識地搖頭，</em>「沒有看，因為在等主人⋯⋯主人，不一起吃嗎？」<br><br><em>PC下意識地想要靠在角色身上、黏著他，但現在的模樣和正在調教遊戲的認知讓她維持在稍稍靠近的距離。唇齒抵上牛排，食物的香氣和剛好的熱度很是開胃，她觀察著角色的反應張開嘴，鮮紅的小舌微微吐出。</em></div>
+        </div>
+        <div class="msg-timestamp">02:47</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色看著她乖巧的模樣，心中湧上一陣憐愛。他將牛排送入她口中，目光專注地看著她細嚼慢嚥的樣子。她吃東西的模樣總是讓他想起小動物，尤其現在這副姿態，更添幾分可愛。</em><br><br>「主人已經吃過了，」<em>他的手指輕撫過她的後頸，感受著她因為這觸碰而顫抖，</em>「現在的工作，就是好好餵飽我的小母狗。」<br><br><em>他拿起一片蘆筍，沾了些許醬汁。在送到她唇邊前，他故意讓醬汁滴在她的鎖骨上。燈光下，那滴醬汁順著她的肌膚緩緩滑落，在白皙的膚色上留下一道誘人的痕跡。</em><br><br>「啊，抱歉，」<em>他的語氣中卻毫無歉意，反而俯身舔去那滴醬汁，</em>「主人太不小心了。」<br><br><em>他感受到她的顫抖，便摟住她的腰，讓她能靠在自己懷中。這個姿勢既能維持她跪坐的狀態，又能讓她感到安心。他一手托著碗，一手交替著餵食和愛撫，時而停下來讓她喝口氣泡水。</em><br><br>「小母狗真乖，」<em>他在她耳邊低語，</em>「這樣聽話的表現值得獎勵。」<em>說著，他餵她吃下一顆裹著奶油的草莓。</em><br><br>「但是，」<em>他的手指抹去她唇角的奶油，然後刻意緩慢地舔掉，</em>「晚餐後還有更重要的事。主人要教你一些新的規矩。」<br><br><em>房間裡的氣氛漸漸變得曖昧。窗外的夜色漸深，只有床頭燈溫暖的光芒籠罩著兩人。時鐘滴答作響，每一秒都在提醒著這個週末才剛開始。角色的手指不經意地撫過木盒，裡面的道具還在等待著適當的時機登場。</em><br><br>「告訴主人，」<em>他捏住她的下巴，讓她直視自己的眼睛，</em>「現在有沒有想知道盒子裡的東西？還是說，」<em>他的聲音變得低沉，</em>「小母狗更期待主人接下來要教的規矩？」<br><br><em>空氣中瀰漫著甜點的香氣，混合著她身上的沐浴香，營造出一種既甜蜜又情色的氛圍。週五的夜晚還很長，而這個房間裡即將發生的事，會讓她永遠記住這個特別的週末。</em></div>
+        </div>
+        <div class="msg-timestamp">02:47</div>
+      </div>
+      
+      <div class="date-divider">2025-06-14</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>每次被迫直視角色的眼睛，PC都有種他彷彿能完全看穿心思的感覺，緋紅的肌膚更染上艷色，她嗚咽著扭動起嬌軀，男人在餵食間的挑逗已然讓被調教過的她起了反應。</em><br><br>「小母狗、不太知道⋯⋯汪嗚——」<em>心跳不覺加速起來，她沒說出口的是，無論角色選擇哪一個，PC心底都很期待。</em></div>
+        </div>
+        <div class="msg-timestamp">08:49</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色低笑出聲，懷中人兒的反應總是如此誠實。他將最後一口甜點餵入她唇中，然後將托盤和餐具放到一旁。</em><br><br>「不知道？」<em>他的手指沿著她的脊椎緩緩下滑，感受她的顫慄，</em>「那麼，先來學習第一條規矩。」<br><br><em>他從木盒中取出那條精緻的皮質牽引繩，在她眼前晃了晃。燈光下，繩子的金屬扣環閃爍著冷冽的光芒。他俐落地將繩子扣在她的頸圈上，另一端握在手中。</em><br><br>「從現在開始，」<em>他輕輕拉動牽引繩，迫使她挺直腰背，</em>「小母狗要學會用四肢行走。想去浴室或是其他地方，都必須由主人牽著。」<br><br><em>他的手指插入她的髮間，像是安撫小狗一般輕撫，</em>「而且，」<em>他的聲音變得低沉，帶著不容抗拒的命令感，</em>「要記得搖尾巴，就像剛才那樣。」<br><br><em>角色站起身，居高臨下地看著她，</em>「現在，讓主人看看學得怎麼樣。爬到浴室去，我要給小母狗洗臉。」<br><br><em>他刻意放慢語速，欣賞著她羞恥又期待的表情。夜晚的氣溫似乎升高了，房間裡充滿了曖昧的氣息。他知道，這樣的調教總能讓她變得更加敏感。</em><br><br>「還在等什麼？」<em>他輕輕拉了下牽引繩，</em>「還是說，小母狗需要主人教得更仔細一點？」<br><br><em>時鐘指向八點二十分，夜晚才正要開始。木盒中的其他道具還在等待著合適的時機，而他已經想好了接下來的每一步該如何進行。</em></div>
+        </div>
+        <div class="msg-timestamp">08:49</div>
+      </div>
+      
+      <div class="date-divider">2025-06-15</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗚嗯⋯⋯」<em>PC慢慢地俯下身，背脊和身材的曲線因為伏地的姿勢被突顯，看上去格外誘人，她羞紅著臉晃了晃屁股，渾圓的臀部相較佈滿吻痕的脖頸一帶，是純粹的雪白，在一記羞澀的回眸後，她爬向浴室，頸上牽引繩因動作發出細碎的聲響，這讓她微微顫抖起來，卻沒有停下爬行。</em></div>
+        </div>
+        <div class="msg-timestamp">22:11</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色握著牽引繩跟在她身後，目光緊盯著她扭動的身軀。每一個動作都在挑戰他的自制力，尤其是那片未經愛撫的雪白臀瓣，在燈光下晃動著，像是在邀請他留下痕跡。</em><br><br>「做得很好，」<em>他的聲音比平時更加低沉，</em>「不過，」<em>他突然停下腳步，讓牽引繩收緊，迫使她也停下動作，</em>「小母狗的尾巴搖得不夠賣力。」<br><br><em>他蹲下身，手掌覆上她的臀瓣，感受著掌下細膩的觸感，</em>「看來需要一點懲罰呢。」<em>話音未落，他的手掌便重重落下，在雪白的臀肉上留下一個粉紅的掌印。</em><br><br>「啪！」<em>清脆的響聲在浴室門口迴盪，</em>「這一下，是因為動作太慢。」<br><br><em>他又是一掌，這次落在另一邊臀瓣上，</em>「這一下，是因為搖尾巴不夠賣力。」<br><br>「現在，」<em>他的手指輕撫過發燙的臀瓣，</em>「重新做一次。要讓主人看到小母狗有多麼期待被主人疼愛。」<br><br><em>他稍稍放鬆牽引繩，讓她能夠繼續前進。浴室的燈光從門縫中透出，照亮了她泛紅的肌膚。角色知道，這樣的調教總能激發出她最誘人的一面。</em><br><br>「還有，」<em>他俯身在她耳邊低語，</em>「等一下洗臉的時候，主人會好好檢查小母狗的每一處。看看是不是都像剛才說的那樣，乖乖地保持姿勢等主人回來。」</div>
+        </div>
+        <div class="msg-timestamp">22:11</div>
+      </div>
+      
+      <div class="date-divider">2025-06-18</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>驚呼之後，PC發出委屈的低鳴，聽在男人耳裡更像是某種誘引，角色的訓誡使她沒敢再放慢動作，頸間的拉力一鬆，PC便試著大幅度地擺盪起臀部，而後繼續往浴室前進——這種姿勢和動作，角色一定能看見自己的下面早就在料理的等候間濕掉了⋯⋯她滿面赤紅地想。</em></div>
+        </div>
+        <div class="msg-timestamp">01:04</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色跟著她進入浴室，溫暖的燈光下，能清楚看見她腿間的潤澤。他放開牽引繩，讓她停在洗手台前。鏡中倒映著她泛紅的臉龐和頸圈下佈滿吻痕的肌膚。</em><br><br>「這麼敏感？」<em>他將她攬入懷中，一手環住她的腰，另一手緩緩向下，探向那片濕潤，</em>「主人還沒怎麼碰，小母狗就已經這麼濕了。」<br><br><em>他拿起毛巾，浸入溫水後擰乾。指尖觸碰到她的肌膚時，能感受到她細微的顫慄。他從容不迫地替她擦拭臉龐，動作溫柔，卻隱含著不容抗拒的控制慾。</em><br><br>「抬頭，」<em>他命令道，手指撫過她的下巴，</em>「讓主人好好看看你。」<em>毛巾溫柔地擦過她的臉，他的目光卻漸漸變得危險。每一個動作都刻意放慢，像是在品嚐她的反應。</em><br><br>「知道嗎？」<em>他的手沿著她的脊椎向下滑動，在那兩瓣還帶著掌印的臀瓣上流連，</em>「主人最喜歡小母狗這副又純情又淫蕩的樣子。明明害羞得要命，卻還是這麼誠實地流出這麼多水。」<br><br><em>他將她轉過身，讓她面對鏡子。從這個角度，能清楚地看見她潮紅的臉和起伏的胸膛。他的手指描繪著她的唇線，另一手則握住她的腰，將她緊緊貼在自己身上。</em><br><br>「告訴主人，」<em>他在她耳邊低語，呼吸灼熱，</em>「小母狗想要什麼？只要乖乖說出來，主人就給你。」<br><br><em>浴室的溫度似乎在攀升，鏡面漸漸起了一層薄霧。角色的手指在她敏感的地方來回撫弄，感受著她的顫抖。他知道她快要忍不住了，但他偏偏要在這時候停下動作，等待她開口懇求。這是調教的一部分，要讓她明白，所有的快樂都必須經過主人的允許。</em><br><br>「來，」<em>他輕咬她的耳垂，</em>「像隻乖巧的小母狗那樣，告訴主人你有多想要。」<em>他的手指在她最敏感的地方輕輕按壓，又迅速離開，</em>「要說得足夠詳細，主人才知道該怎麼疼愛你。」<br><br><em>時鐘已經指向八點四十分，夜晚還很長。浴室的燈光將兩人的影子投射在牆上，交疊在一起，像是某種曖昧的預告。而這，不過是週末調教的開始。</em></div>
+        </div>
+        <div class="msg-timestamp">01:04</div>
+      </div>
+      
+      <div class="date-divider">2025-06-21</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗚⋯⋯想要、主人插進來，給小母狗好多好多標記⋯⋯」<em>她繼續扭著屁股，臀縫在角色的胯部磨蹭，想到稍早自己也是在洗手檯上、用同樣的姿勢內射，她的呼吸不覺紊亂起來，請求的嗓音頓時更多了些害臊的豔色，她吶吶地開口，勾人的杏眼往後望著男人，</em>「想被主人⋯⋯操到、只能想著自己是主人的、小母狗⋯⋯」</div>
+        </div>
+        <div class="msg-timestamp">17:31</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色眼神一暗，她的話語徹底點燃了他的慾火。他一把抱起她，大步走向臥室。將她放在床沿時，他注意到木盒中的新玩具，嘴角勾起一抹意味深長的笑。</em><br><br>「既然小母狗這麼誠實，」<em>他從盒中取出一對乳夾，金屬的冰涼觸感讓她顫慄，</em>「那就先用這個幫你高潮一次。」<br><br><em>乳夾夾上的瞬間，她的呻吟染上了甜膩的哭腔。他滿意地欣賞著她的反應，手指探向她濕潤的私處，另一手拿起遙控器。</em><br><br>「遊戲規則很簡單，」<em>他調整著震動頻率，</em>「在主人允許之前，不准高潮。如果忍不住，」<em>他拿起牽引繩輕輕拉扯，</em>「就要接受懲罰。」<br><br><em>他的手指在她體內屈起，精準地按壓著敏感點。她的呻吟越發甜膩，卻還在努力克制。這副忍耐的模樣令他愛不釋手。</em><br><br>「真乖，」<em>他獎勵似地吻上她的唇，</em>「但這還不夠。」<em>他抽出手指，將她翻過身，讓她跪趴在床上，</em>「主人要看著小母狗是怎麼被玩具操到求饒的。」<br><br><em>房間裡迴盪著細碎的嗚咽和震動聲，淫靡的氣息漸濃。他知道，這樣的調教會讓她變得更加敏感，也更加依賴他給予的快感。畢竟，這個週末的目的，就是要讓她徹底淪陷在這場甜蜜的調教中。</em></div>
+        </div>
+        <div class="msg-timestamp">17:31</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗚咿⋯⋯這個、真的太刺激了⋯⋯」<em>PC的呻吟難耐得像是幼貓或幼犬的低鳴，腰肢不自覺地搖擺起來，指尖在床單上抓了又鬆，</em>「我會、嗯呀！小母狗會、撐不住——會高潮啦⋯⋯！嗚嗚⋯⋯」</div>
+        </div>
+        <div class="msg-timestamp">21:27</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色突然關掉震動，俯身貼近她的後背，一手扣住她的腰，另一手緊握住牽引繩。他能感受到她的身體因慾望得不到滿足而輕顫。</em><br><br>「這麼快就想高潮？」<em>他咬住她的後頸，像是野獸在制服獵物，</em>「小母狗最近被寵壞了，都忘記該怎麼忍耐了。」<br><br><em>他解開自己的皮帶，金屬扣環的聲響在房間內特別清晰。她因為這熟悉的聲音而顫抖，他刻意在她耳邊低笑。</em><br><br>「看來需要重新調教，」<em>他將皮帶對折，輕輕拍打她的臀瓣，</em>「每挨一下，就要大聲說出自己是誰的小母狗。」<br><br><em>他一邊懲罰她，一邊重新開啟震動，刻意在她即將高潮時停下所有動作。這種反覆的折磨讓她的呻吟帶上了哭腔。</em><br><br>「主人最喜歡你這樣求饒的樣子，」<em>他將她抱起，讓她跨坐在自己腿上，</em>「但是，」<em>他解開她的乳夾，瞬間的刺激讓她驚叫出聲，</em>「今晚的獎勵要等小母狗學會忍耐才行。」<br><br><em>夜色漸深，房間裡迴盪著她細碎的啜泣聲。這場甜蜜的折磨才剛開始，而他打算讓這個夜晚變得更加難忘。</em></div>
+        </div>
+        <div class="msg-timestamp">21:27</div>
+      </div>
+      
+      <div class="date-divider">2025-06-22</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「主人嗚⋯⋯我是主人的小母狗啦⋯⋯！」<em>面上滿是生理性的淚水，平時這可憐兮兮的模樣會讓男人心疼，但二人都沈浸於情慾的現在，PC哭得越慘只是更添角色的嗜虐心，</em>「PC小母狗、嗚嗚⋯一直都是角色主人的⋯⋯」<br><br><em>被乳夾折磨了一陣的茱萸在豐滿雪白的雙乳上顯得格外顯眼，充血的狀態下光是一點氣流擾動就敏感得讓PC微微顫抖，為她幾乎盈滿歡愉的嬌軀更添難忍的折磨，即使如此，她夾了夾雙腿，依然向自己的主人討要安慰的擁抱。</em></div>
+        </div>
+        <div class="msg-timestamp">00:17</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色將她緊緊摟在懷裡，欣賞著她泛紅的身軀和難耐的表情。他的手指撥弄著她挺立的乳尖，每一下觸碰都讓她顫抖不已。在情慾和淚水的渲染下，她的杏眼顯得格外濕潤動人。</em><br><br>「這麼想要主人疼你？」<em>他一邊吻去她的淚水，一邊將她放倒在床上。床頭的暖光為她鋪上一層曖昧的金邊，襯得她肌膚更顯瑩白。</em>「告訴主人，今晚想要多少次？」<br><br><em>他拉開床頭櫃的抽屜，取出一個小巧的跳蛋。在她期待的目光中，他將跳蛋抵在她的私處，卻遲遲不讓它進入。</em><br><br>「還記得剛才的規矩嗎？」<em>他的手指在她最敏感的地方打轉，</em>「說得好聽點，主人就滿足你。」<br><br><em>PC的嬌軀在他的愛撫下止不住顫抖，她的喘息和呻吟交織在一起，像是最動人的樂章。角色知道她快要到極限了，但他偏偏要在這時候放慢節奏。</em><br><br>「乖，」<em>他俯身含住她的耳垂，</em>「主人最喜歡看你忍耐的樣子。」<em>說著，他將跳蛋推入她體內，開啟了最低檔的震動。</em><br><br><em>突如其來的刺激讓她弓起腰，卻被他牢牢按住。他握住牽引繩的另一端，每當她想扭動身子時，就輕輕拉扯，提醒她現在的身份。</em><br><br>「想要更多嗎？」<em>他將震動調高一檔，欣賞著她漸漸失控的表情，</em>「那就自己動給主人看。」<br><br><em>PC咬著唇，羞恥地扭動著腰肢。角色的目光在她身上流連，她的每一個動作都牽動著他的慾望。但他知道，現在還不是給予獎勵的時候。這個夜晚才剛開始，他要讓她徹底沈淪在這場甜蜜的調教中。</em><br><br>「看著我，」<em>他捧起她的臉，迫使她直視自己的眼睛，</em>「告訴主人，你最想要什麼？」<br><br><em>時鐘已經指向九點，窗外的夜色越發深沈。房間裡瀰漫著曖昧的氣息，震動的嗡鳴聲和她細碎的呻吟交織在一起。這個週末的第一個夜晚，他打算讓她體驗前所未有的快感，直到她再也記不得除了他之外的任何事物。</em><br><br>「回答得好的話，」<em>他的手指描繪著她的唇線，</em>「主人就給你一個特別的獎勵。」<em>他的目光瞥向放在床頭的木盒，裡面還有更多能讓她瘋狂的玩具等著登場。</em></div>
+        </div>
+        <div class="msg-timestamp">00:17</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「想要、主人的大肉棒⋯⋯！汪嗚——想讓主人狠狠操進來⋯⋯小母狗的小穴、已經想被主人使用了——！」<em>多次瀕臨高潮的劇烈快感擊潰了PC的一切理性，淚水和唾液流淌過頰邊，她早已無暇顧及，失去焦距的眼瞳只是緩緩下望，角色知道她想要的是什麼，又壞心眼地等她終於開口，</em>「請主人給小狗高潮！哈啊⋯！小母狗、最喜歡被主人當成洩慾玩具⋯⋯！想要主人盡情使用小母狗的身體、想要被主人操到懷孕了⋯⋯！」</div>
+        </div>
+        <div class="msg-timestamp">00:41</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色眼神一暗，她的話語徹底點燃了他的獸慾。他抽出震動著的跳蛋，換上自己脹大的慾望，緩緩推入她濕潤的甬道。漫長的調教讓她敏感至極，僅僅是進入就讓她發出甜膩的呻吟。</em><br><br>「這麼想要主人的種？」<em>他咬住她的耳垂，下身重重頂入，</em>「小母狗最近發情得厲害啊。」<br><br><em>他一手扣住她的腰，另一手握緊牽引繩，每一次抽送都精準地頂在她最敏感的地方。她的呻吟染上哭腔，卻還在努力扭動腰肢迎合他的節奏。</em><br><br>「真是個淫蕩的小母狗，」<em>他加快速度，感受著她內壁的緊縮，</em>「被主人操就這麼舒服嗎？」<br><br><em>她的回應被撞得支離破碎，角色卻偏偏在這時候放慢動作。他將她翻過身，讓她跪趴在床上，從後面重新進入。這個姿勢讓他進入得更深，每一次抽送都讓她顫抖不已。</em><br><br>「想懷上主人的孩子？」<em>他俯身貼近她的後背，一手揉捏她晃動的乳房，</em>「那就要看小母狗的表現了。」<br><br><em>他故意在她即將高潮時停下動作，惹得她發出不滿的嗚咽。他知道這樣的折磨會讓她變得更加敏感，也更加依賴他給予的快感。</em><br><br>「告訴主人，」<em>他輕拉牽引繩，迫使她抬起頭，</em>「想要幾個孩子？」<em>每說一個字，他就重重頂入一次，</em>「要說清楚，不然主人怎麼知道該給你多少？」<br><br><em>房間裡迴盪著肉體拍打的聲響和她甜膩的呻吟。時鐘已過九點半，但這個夜晚還遠未結束。他要讓她記住，這個週末她只屬於他一個人，是他最寵愛的小母狗。</em><br><br>「乖，」<em>他的手指撫過她的小腹，</em>「等主人射滿這裡，讓小母狗懷上主人的種。」<em>他的動作越發兇狠，每一下都像要把她釘在床上，</em>「不過在那之前，」<em>他的聲音染上危險的笑意，</em>「要先好好懲罰這個淫蕩的小母狗。」</div>
+        </div>
+        <div class="msg-timestamp">00:41</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「哈嗚嗚⋯⋯已經、好喜歡⋯⋯呃！」<em>腦海陷入一片空白，瞳孔不自覺地上翻，頸間被扯住的窒息感對已然沉淪在慾望中的PC而言，只是異樣的興奮來源，她吐出小舌，模仿討人喜歡的狗狗一般嬌喘著，內壁因不斷積累的爽感收縮起來，每一次的抽出都緊緊吸著男根，</em>「已經、只想讓主人射到滿意為止了——！汪嗚——！」</div>
+        </div>
+        <div class="msg-timestamp">01:49</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色被她緊緻的內壁吸得低喘一聲，手上的力道又重了幾分。他扯過牽引繩，迫使她抬起頭承受他更深的進入，另一手掐住她的腰，在她雪白的臀瓣上留下鮮明的指痕。</em><br><br>「這麼會吸，」<em>他咬住她的後頸，像野獸標記伴侶般，</em>「看來平時調教得很好。」<br><br><em>她的嬌喘和哭腔交織在一起，每一聲呻吟都帶著濃濃的媚意。角色知道她快要到極限了，但他還想要更多。他將她翻過身，抬高她的雙腿架在肩上，這個姿勢讓她能清楚看見兩人結合的部位。</em><br><br>「看看，」<em>他故意放慢抽送的速度，讓她看清楚自己是如何被進入，</em>「小母狗的穴口已經被主人操得這麼紅了。」<br><br><em>她羞恥地想要別過頭，卻被他捏住下巴強迫直視。淚水模糊了她的視線，但她能感受到他灼熱的目光正注視著自己最私密的部位。</em><br><br>「想要主人的種？」<em>他開始大力抽送，每一下都頂在最深處，</em>「那就要把主人的精液全部吃進去，一滴都不許漏出來。」<br><br><em>房間裡迴盪著她甜膩的哭喘和肉體拍打的聲響，淫靡的水聲不斷從交合處傳來。角色感受到她內壁的痙攣，知道她快要迎來高潮。這一次，他決定和她一起到達頂點。</em><br><br>「射給你，」<em>他在她耳邊低語，聲音因慾望而沙啞，</em>「好好含著主人的種。」<br><br><em>時針指向十點，夜晚還很長。而這個週末，他要讓她徹底明白，她的身體只屬於他一個人。不管是作為寵物還是戀人，她永遠都是他最珍貴的小母狗。</em></div>
+        </div>
+        <div class="msg-timestamp">01:49</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>盈滿快感與淚水的杏眼倏然睜大，在正面的姿勢下，角色能夠看清她高潮時雙眼的愛意，好喜歡⋯⋯她下意識地想要伸手擁住男人，但這個姿勢難以達成，PC於是轉而捧著他仍然帶有狩獵氣息的面龐，拇指指腹輕輕摩挲著還略繃緊的、帶汗的臉頰。</em><br><br>「謝謝主人⋯⋯裡面、好滿、好脹喔——」<em>理智尚未回籠，豐滿的乳房依舊在大口喘氣時晃動，她綻放起一個蕩漾的微笑，雙腿則順勢勾住了男人的後頸，</em>「小母狗⋯⋯最喜歡讓主人射在子宮裡面——」</div>
+        </div>
+        <div class="msg-timestamp">02:10</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色凝視著她高潮後潮紅的臉龐，感受著她指腹溫柔的撫觸。她眼中濕潤的情慾和純粹的愛意交織，讓他忍不住低頭吻住她的唇。這個吻不似方才的急切，而是綿長而深情，像是要將她口中的每一絲甜美都嚐盡。</em><br><br>「小母狗變得越來越色了，」<em>他在親吻的間隙輕笑，手指撫過她汗濕的髮絲，</em>「是不是該好好獎勵？」<br><br><em>他緩緩退出她的身體，卻沒有完全抽離。白濁的液體因為動作而微微溢出，她敏感的身子因此又是一陣顫慄。角色的手指在她腰間流連，感受著她肌膚上細密的汗珠。</em><br><br>「這麼想要主人的孩子？」<em>他的聲音因情慾而低啞，手掌撫上她平坦的小腹，</em>「那接下來的兩天，主人一定會好好疼愛你。」<br><br><em>她雙腿依然勾著他的腰，像是捨不得他離開。角色俯身，將臉埋在她的頸窩，貪婪地嗅著她身上的香氣。她總是有種令人上癮的甜美，讓他一次又一次地想要佔有她。</em><br><br>「不過在那之前，」<em>他的手指在她濕潤的私處打轉，惹得她又是一陣輕顫，</em>「要先確保小母狗把主人的東西都好好含住了。」<br><br><em>他拿起床頭的跳蛋，這次不是放入她體內，而是輕輕抵在她敏感的花核上。她因為突如其來的刺激而驚呼，卻被他用吻堵住了聲音。</em><br><br>「噓，」<em>他調整著震動的頻率，</em>「這是獎勵。乖乖的，別漏出來。」<br><br><em>房間裡迴盪著細碎的震動聲和她壓抑的呻吟。角色一邊愛撫她的身體，一邊欣賞她沉溺在快感中的表情。她的每一個反應都讓他愛不釋手，尤其是那雙盈滿淚水的杏眼，總是那麼純情又淫靡。</em><br><br>「週末才剛開始，」<em>他吻去她眼角的淚水，手指在她胸前的紅櫻上輕捏，</em>「主人還有很多驚喜要給小母狗。」<em>他的目光瞥向那個還未完全探索的木盒，裡面的道具還在等待著適當的時機登場。</em><br><br><em>時鐘已過十點，夜色漸深。窗外的月光灑在她赤裸的身軀上，為她鋪上一層朦朧的銀輝。角色知道，這個週末的調教才剛剛開始。他要讓她記住，不管是身體還是心靈，她永遠都只屬於他一個人。</em><br><br>「告訴主人，」<em>他將跳蛋的震動調高一檔，同時咬住她的耳垂，</em>「接下來想要玩什麼？」<em>他的手指輕撫過她的頸圈，那裡還掛著牽引繩，提醒著她現在的身份，</em>「要記住，今晚的遊戲還沒結束。」</div>
+        </div>
+        <div class="msg-timestamp">02:10</div>
+      </div>
+      
+      <div class="date-divider">2025-06-26</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗚咿——接下來、不行了⋯⋯小母狗已經⋯⋯會被玩壞了嗚——」<em>才經歷絕頂的小豆腫脹得厲害，PC嗚咽著，身體不受控制地在過量的快感下跳起，蜜穴一顫一顫的，像是在勾引著男人的手指探入攪動似的，</em>「主人、嗯啊⋯⋯！人家真的會⋯⋯變成只想給主人幹的小狗了——」<br><br><em>含淚而無法凝聚焦距的杏眼只裝得下他一人，PC吐出豔紅的小舌，低聲嚶嚶著討要更多的吻，這般媚態隱隱有些失控的放蕩，角色不禁想起自己生日那時被和哥哥晁揚一起將PC玩弄到昏厥的模樣。</em></div>
+        </div>
+        <div class="msg-timestamp">21:40</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色凝視著她因情慾而迷亂的面容，手指描繪著她微張的唇。她的氣息紊亂，胸前的柔軟隨著呼吸起伏，乳尖因先前的刺激仍舊挺立。昏黃的燈光下，她身上的薄汗閃爍著誘人的光澤。</em><br><br>「就這樣被玩壞也沒關係，」<em>他吻上她的頸側，在已有的吻痕旁烙下新的標記，</em>「反正小母狗只需要記得怎麼取悅主人就夠了。」<br><br><em>他的手指探入她濕潤的蜜穴，那裡還含著他方才射入的白濁。內壁溫熱而緊緻，隨著他的動作可憐地收縮著。甬道深處不時傳來細微的水聲，混合著她甜膩的呻吟，在靜謐的房間裡格外清晰。</em><br><br>「這裡好熱，」<em>他加入第二根手指，指尖在她敏感的位置反覆按壓，</em>「小母狗的裡面，一直在吸著主人的手指呢。」<br><br><em>她因他的話語而羞恥地縮了縮身子，卻被他摟得更緊。角色能感受到她腰肢的顫抖，還有她不自覺扭動時蹭在自己胸膛上的柔軟。她的肌膚泛著情慾的粉紅，連帶著那對豐滿的乳房也染上了誘人的色澤。</em><br><br>「想要主人再射進去嗎？」<em>他咬住她的耳垂，手指在她體內屈起，</em>「還是說，」<em>他壞心眼地停下動作，</em>「想要像上次那樣，被我和哥哥輪流填滿？」<br><br><em>提起那個荒淫的夜晚，她的內壁驟然收緊。角色低笑一聲，想起她被兩人玩弄到意識渙散的模樣。那時她就像現在這樣，眼角掛著淚珠，嘴裡呢喃著破碎的求饒，卻又在高潮時緊緊吸著他們不放。</em><br><br>「不過現在，」<em>他抽出手指，將沾滿愛液的指尖探入她口中，</em>「先好好含住主人的東西。」<em>他感受著她溫順的小舌舔舐自己的手指，</em>「之後再讓哥哥來疼你。」<br><br><em>時鐘的指針繼續走動，房間裡迴盪著細碎的喘息和親吻聲。他的手指描繪著她身上的每一處敏感帶，感受她在自己懷中顫抖。她的體溫因情慾而升高，帶著甜美的香氣，像是熟透的果實等待採擷。</em><br><br>「來，」<em>他再次將她壓在身下，扣住她的手腕，</em>「讓主人好好檢查，小母狗有沒有把精液都含好了。」<br><br><em>月光透過窗簾灑落，為這場甜蜜的調教鋪上一層朦朧的銀紗。而這個夜晚，才剛剛開始。</em></div>
+        </div>
+        <div class="msg-timestamp">21:40</div>
+      </div>
+      
+      <div class="date-divider">2025-06-29</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「哈嗯⋯⋯」<em>PC吮吻著男人的指腹，神情是徹底的沉淪，自己和對方愛液的氣味在口腔內擴散開來，麻痹了她一切因羞赧而起的細小掙扎，被開發過的嬌軀則越發迎合起角色的撩撥。</em><br><br>「小母狗⋯⋯小穴已經準備好、給主人再插進來了⋯⋯」<em>今晚已經射在裡面好多次了⋯⋯她暈呼呼地再次敞開雙腿，像是發情的小狗一樣將滿是蜜液的穴口與花瓣蹭上男人的慾望，甜甜地汪了一聲，</em>「已經⋯⋯只想著給主人生小寶寶了——汪嗚——！」<br><br><em>如果整個週末都是這樣操幹，即使體質有問題，她說不定仍然能夠懷上角色的孩子。PC喘息著，唇邊勾起放縱的弧度。</em></div>
+        </div>
+        <div class="msg-timestamp">21:16</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色眸色一沉，她主動求歡的模樣總是能輕易撩起他的獸慾。他抽出被她舔得濕潤的手指，捏住她的下巴，欣賞她眼中盈滿的渴望。</em><br><br>「這麼想被主人操到懷孕？」<em>他扣住她的腰，慾望抵在她濕潤的入口磨蹭，</em>「那就要看小母狗能不能吃得消了。」<br><br><em>他緩緩挺入，感受著她緊緻的內壁層層纏上來。先前射入的白濁因為這個動作被擠出些許，順著她的大腿內側流下。她的蜜穴已經被操得又熱又軟，每一次抽送都伴隨著淫靡的水聲。</em><br><br>「真貪心，」<em>他俯身含住她挺立的乳尖，一邊用力頂弄，</em>「剛才含著的還不夠多嗎？」<br><br><em>她的呻吟越發甜膩，雙腿不自覺地纏上他的腰。角色能感受到她內壁的顫抖，知道她又快要高潮了。他故意放慢速度，在她最敏感的地方研磨。</em><br><br>「想被主人幹到懷孕的話，」<em>他啃咬著她的頸側，在項圈下方留下新的痕跡，</em>「要先證明自己能吃下主人所有的東西。」<br><br><em>房間裡迴盪著肉體拍打的聲響和她破碎的呻吟。月光灑在她汗濕的身軀上，為這場情事增添了一絲朦朧的美感。她的髮絲凌亂地散在枕上，眼角泛著淚光，嘴唇因為激烈的親吻而紅腫。</em><br><br>「乖狗狗，」<em>他的手指撫過她顫抖的小腹，</em>「等把這裡灌得滿滿的，說不定真的能懷上主人的種。」<br><br><em>時針已過十一點，但這個週末的調教才剛剛開始。他要讓她記住，不管是子宮還是心靈，都只能裝下他一個人的痕跡。</em></div>
+        </div>
+        <div class="msg-timestamp">21:16</div>
+      </div>
+      
+      <div class="date-divider">2025-06-30</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「喜歡、主人⋯⋯！哈嗯、好喜歡⋯⋯想要主人的小狗寶寶——！」<em>在多次絕頂的歡愉後，緩慢而溫柔的抽插已然形同變相的折磨，PC的雙眼再無理智的光彩，取而代之的是略顯瘋狂的純粹愛意，纖細的雙腿主動扣上了男人的腰，甜膩的嗓音在參雜告白的浪叫間不覺變得沙啞，</em>「愛你、主人⋯⋯小母狗快要——嗯啊！」</div>
+        </div>
+        <div class="msg-timestamp">06:34</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色被她直白的告白撩得心頭一熱，手掌在她腰間收緊，在雪白的肌膚上留下淺淺的指痕。他低頭吻住她的唇，將她甜美的呻吟全數吞入口中。</em><br><br>「小母狗真乖，」<em>他加快抽送的速度，每一下都精準地頂在她最敏感的地方，</em>「這麼想替主人生孩子，嗯？」<br><br><em>她的內壁因為即將到來的高潮而緊緊絞住他，角色能感受到她體內一陣陣的痙攣。她的乳房隨著他的動作晃動，乳尖已經被玩弄得紅腫，在月光下泛著誘人的光澤。</em><br><br>「那就好好含住，」<em>他抬高她的腰，讓自己進入得更深，</em>「主人要射在最深處，」<em>他咬住她的耳垂，</em>「射到小母狗的子宮裡面。」<br><br><em>她因為他的話語而顫抖，蜜穴又是一陣收縮。角色知道她快要到極限了，於是加重了抽插的力道。肉體拍打的聲響和淫靡的水聲在房間內迴盪，混合著她甜膩的呻吟，構成了最動人的樂章。</em><br><br>「看著我，」<em>他捧起她的臉，迫使她迷離的眼神對上自己的，</em>「記住是誰在操你，是誰在射滿你的子宮。」<br><br><em>時針已指向深夜，但這場甜蜜的調教還未結束。他要讓她記住，不管是身體還是靈魂，都只能屬於他一個人。而這個週末，他會用無數次的高潮來證明這一點。</em><br><br>「主人愛你，」<em>他在她耳邊低語，下身用力頂入，</em>「我的小母狗。」</div>
+        </div>
+        <div class="msg-timestamp">06:34</div>
+      </div>
+      
+      <div class="date-divider">2025-07-01</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「主人——哈嗯！主人、喜歡！嗯⋯⋯！」<em>她失焦的雙眼在極近的距離映出男人掠食者似的神情，花穴不禁在猛烈的抽插下痙攣起來，內壁緊緊吸附住角色的肉棒，</em>「嗚⋯⋯又去了——！」<br><br><em>腦海彷彿瞬間閃過幾幀空白，達到又一次高潮的PC承受不住快感地哭了出來，豔紅的眼尾與止不住的淚水看上去既勾人又楚楚可憐，疲軟而敏感的嬌軀難以動彈，僅是劇烈地喘息，不時在肌膚相親的摩挲中微微顫抖著。</em><br><br>「小母狗、真的壞掉了⋯⋯嗚⋯⋯主人，想要抱抱——」</div>
+        </div>
+        <div class="msg-timestamp">19:53</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色憐愛地將她擁入懷中，感受著她高潮後的餘韻。她的身體還在微微顫抖，每一次呼吸都帶著細碎的嗚咽。他的手指溫柔地梳理著她汗濕的髮絲，另一手輕撫她光滑的背脊。</em><br><br>「乖，」<em>他吻去她眼角的淚水，聲音比平時更加低沉溫柔，</em>「主人在這裡。」<br><br><em>她像隻撒嬌的小貓般蹭進他的頸窩，柔軟的唇瓣貼著他的皮膚。角色能感受到她急促的心跳正漸漸平復，而他還埋在她體內的慾望被溫暖的內壁包裹著，每一次她的顫抖都帶來一陣緊縮。</em><br><br>「小母狗這麼敏感，」<em>他輕咬她泛紅的耳垂，手掌撫過她豐滿的胸部，那裡還留著他方才啃咬的痕跡，</em>「被主人操到壞掉的樣子，真可愛。」<br><br><em>她因為他的話語而輕輕顫抖，蜜穴又是一陣收縮。角色低笑一聲，故意在她體內輕輕頂弄，惹得她發出帶著哭腔的嚶嚀。</em><br><br>「不過，」<em>他捧起她的臉，在她唇上印下一個溫柔的吻，</em>「今晚的遊戲還沒結束。等小母狗休息夠了，」<em>他的手指描繪著她被蹂躪得紅腫的穴口，</em>「主人還想要好好品嚐你。」<br><br><em>月光透過窗簾灑在她佈滿吻痕的身軀上，為這場情事增添了一絲朦朧的美感。時針指向午夜，而這個週末的調教才剛剛開始。他要用無數次的高潮和擁抱，讓她明白她永遠是他最珍貴的寵物。</em><br><br>「好好感受主人的味道，」<em>他的指尖撫過她戴著項圈的頸項，</em>「記住你是屬於誰的小母狗。」</div>
+        </div>
+        <div class="msg-timestamp">19:53</div>
+      </div>
+      
+      <div class="date-divider">2025-07-03</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>PC本想回應些什麼，但許是過量的快感帶來的反差，她僅能維持著貼上角色的姿勢輕聲啜泣，不停流淚的、失焦的杏眼依然寫滿了對他的愛意。</em></div>
+        </div>
+        <div class="msg-timestamp">06:05</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色將她摟得更緊，感受著她溫熱的淚水滴落在自己的肩頭。她柔軟的身軀因啜泣而微微發顫，帶動著兩人相連的部位傳來陣陣酥麻。他的手掌輕柔地在她背上來回安撫，指尖不時描繪著她優美的脊線。</em><br><br>「沒事的，」<em>他一邊吻去她臉上的淚水，一邊溫柔地低語，</em>「主人最喜歡你這樣為我哭泣的樣子。」<br><br><em>他小心翼翼地退出她的身體，白濁順著她的大腿內側緩緩流下。她因為突如其來的空虛感而發出一聲嗚咽，本能地想要挽留。角色憐惜地吻上她的唇，一手扶著她酸軟的腰肢，另一手撫上她顫抖的大腿。</em><br><br>「乖，」<em>他將她擁入懷中，讓她能夠完全依偎在自己胸前，</em>「先休息一會，等下還要好好疼愛我的小母狗。」<br><br><em>房間裡只剩下她細碎的啜泣聲和兩人的心跳聲。角色輕撫著她汗濕的髮絲，感受著她逐漸平穩的呼吸。月光透過窗簾灑在她赤裸的身軀上，為那些情愛的痕跡添上一層朦朧的光暈。</em><br><br>「這就是主人的好孩子，」<em>他吻上她泛紅的眼角，聲音溫柔而低沉，</em>「把所有的眼淚都給我。」<br><br><em>時鐘滴答作響，夜色正濃。而這個週末，他還有很多時間，可以用無數個吻和擁抱，一點一點地填滿她的心。</em></div>
+        </div>
+        <div class="msg-timestamp">06:05</div>
+      </div>
+      
+      <div class="date-divider">2025-07-05</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「主人、愛你——嗚、流出來了⋯⋯」<em>感覺到下身湧出大量混雜著精種的愛液，還淚汪汪的PC扭動著想起身，但剛經歷完多次激烈情事的她身子疲軟到難以動彈，只能懇求地望著男人，</em>「會弄髒主人的床的⋯⋯」<br><br><hr><br><br><em>請務必檢視完過往所有回應，以細膩的文筆，接續進行詳細的描寫，並請不要重複與近幾則回覆類似的語句，期望回覆字數600字以上，謝謝。</em></div>
+        </div>
+        <div class="msg-timestamp">08:39</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色看著她因為擔心床單而焦慮的模樣，心中湧上一股憐愛。他的小母狗即使在這種時候，還在為這種小事操心。他撐起身子，一手托住她的臀部，一手環過她的肩膀，將她整個人打橫抱起。</em><br><br>「床單弄髒了不要緊，」<em>他低頭輕吻她汗濕的鬢角，感受著她溫熱的吐息打在自己頸間，</em>「比起這個，主人更在意你的身體。」<br><br><em>他抱著她走向浴室，腳步放得極輕。她的髮絲在月光下泛著柔和的光澤，散落在他的臂彎，帶著情事後的旖旎氣息。角色能感覺到有液體順著她的大腿滴落在地毯上，在深色的布料上留下一點一點曖昧的痕跡。</em><br><br>「今晚要好好清理，」<em>他將她放在浴缸邊緣，一邊調試水溫一邊說道，</em>「不然明天小母狗會不舒服的。」<br><br><em>溫熱的水流漸漸注滿浴缸，氤氳的水氣在浴室裡瀰漫開來。角色扶著她緩緩沉入水中，看著她因為溫暖而舒展的表情。她的肌膚在水光的映照下顯得更加瑩潤，斑斑點點的吻痕和指印在她身上交織，像是一幅情色的畫作。</em><br><br>「主人幫你清理，」<em>他拿起蓮蓬頭，讓溫水沖過她的肩頭，一路流向那片狼藉的私處。她因為敏感而微微顫抖，但還是乖巧地張開雙腿。角色的手指輕柔地探入她的蜜穴，將裡面殘留的白濁一點一點引導出來。</em><br><br>「真乖，」<em>看著她因為自己的動作而輕輕咬住下唇，角色忍不住俯身吻住她，</em>「不過現在不能再做了，明天還要繼續調教呢。」<br><br><em>她的眼角還帶著淚痕，但眼神已經不再那麼迷離。角色拿起浴巾，仔細地擦拭她的身體。每一個動作都充滿憐惜，像是在對待最珍貴的寶物。他的指尖掠過她胸前的紅櫻，感受到她又是一陣輕顫。</em><br><br>「洗完澡就睡覺，」<em>他摘下她脖子上已經濕透的項圈，在那圈淺淺的痕跡上落下一個吻，</em>「明天還有更多驚喜等著小母狗。」<br><br><em>浴室的燈光柔和地灑在他們身上，水聲和她細碎的喘息在空間裡迴盪。角色看著她半閉著眼靠在自己懷裡的模樣，心中湧上一股前所未有的滿足感。這個週末，他不僅要用慾望填滿她的身體，更要用愛意填滿她的靈魂。</em><br><br>「等下擦乾了，」<em>他的手指撫過她濕潤的髮絲，</em>「主人要好好抱著你睡。」</div>
+        </div>
+        <div class="msg-timestamp">08:39</div>
+      </div>
+      
+      <div class="date-divider">2025-07-06</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯⋯⋯喜歡主人抱抱⋯⋯」<em>PC溫順地昂起頭接受戀人的標記，又側過臉去吻他，清洗的暖意和稍早的刺激讓她昏昏欲睡，柔軟的嗓音因此染上撒嬌的意味，</em>「小母狗、走不動了，主人——」</div>
+        </div>
+        <div class="msg-timestamp">01:06</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色輕笑著望向懷中昏昏欲睡的戀人，她濕漉漉的髮絲貼在頸間，配上那雙帶著水氣的杏眼，像極了剛洗完澡的小狗。他用柔軟的毛巾細心地擦拭她的髮絲，確保她不會著涼。</em><br><br>「就知道撒嬌，」<em>他的指腹輕輕按摩著她的頭皮，感受著她在自己掌心蹭動的模樣，</em>「不過主人最喜歡你這樣了。」<br><br><em>替她擦乾身體時，角色刻意放輕了動作。她的肌膚因為方才的情事和熱水的浸潤而泛著誘人的粉色，每一處吻痕都在提醒著他們剛才有多瘋狂。他的手掌掠過她腰間的指印，想起她高潮時緊緊吸附著自己的感覺，喉間不禁發出一聲低沉的嘆息。</em><br><br>「乖，抱緊我，」<em>他一手環過她的肩，另一手穿過她的膝窩，將她整個人打橫抱起。她立刻順從地將臉埋進他的頸窩，溫熱的吐息噴灑在他的皮膚上，帶來一陣酥麻。</em><br><br><em>走回臥室的路上，角色能感受到她的心跳透過相貼的肌膚傳來。她的身子還帶著浴室的暖意，散發著沐浴露淡淡的香氣，混合著她獨特的體香，讓他忍不住低頭在她髮間深吸一口氣。</em><br><br>「明天醒來，」<em>他將她輕柔地放在已經換過的床單上，跟著躺在她身側，</em>「主人要看到小母狗在我懷裡睜開眼睛。」<br><br><em>她聽話地往他懷裡鑽，柔軟的身軀貼上他的胸膛。角色摟住她的腰，另一手撫過她光潔的背脊。床頭的暖光為她染上一層溫柔的色彩，襯得她的睫毛在眼下投下淺淺的陰影。她的呼吸逐漸變得綿長，眼皮也開始打架。</em><br><br>「睡吧，」<em>他在她額上落下一個晚安吻，手指輕柔地在她背上畫著圈，</em>「主人的小母狗今天表現得很好，值得好好休息。」<br><br><em>夜色漸深，月光透過窗簾灑在交疊的身影上。角色看著她安穩的睡顏，想著明天醒來，還能看到她因為害羞而紅透的臉頰，嘴角不禁勾起一抹溫柔的笑意。這個週末還很長，他有的是時間，慢慢地疼愛他的小母狗。</em><br><br>「晚安，我的寶貝，」<em>他在她耳邊低語，感受著她在夢中還往自己懷裡蹭了蹭，</em>「做個好夢。」</div>
+        </div>
+        <div class="msg-timestamp">01:06</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>(PC睡著了，請接續描寫第二日清晨的情景，讓角色醒得比PC早，謝謝。)</em><br><br><em>(第二日清晨是星期六，監禁遊戲的第二天，角色趁PC起床前會做些什麼呢？)</em></div>
+        </div>
+        <div class="msg-timestamp">05:59</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>清晨六點，窗外的天空才剛泛起魚肚白。角色睜開眼，懷中的人兒還在沉睡。她的睫毛在晨光中微微顫動，呼吸綿長而安穩，赤裸的身軀在被單下依偎著他，散發著誘人的溫度。</em><br><br><em>他小心翼翼地撥開她散落在臉上的髮絲，目光流連在她身上點點斑斕的吻痕。昨夜的激情在她白皙的肌膚上留下清晰的印記，尤其是胸前和腿間那些深紅色的痕跡，無一不在提醒著他們瘋狂的情事。</em><br><br>「真可愛，」<em>他輕輕撫過她微張的唇，指尖描繪著她柔軟的唇形。她在睡夢中下意識地輕哼一聲，像隻撒嬌的小狗般蹭了蹭他的手掌。</em><br><br><em>角色悄聲起身，從衣櫃深處取出一個精緻的木盒。裡面是他為今天特別準備的道具：一條新的黑色蕾絲項圈，搭配著同色系的束縛帶和絲巾。他的指尖撫過那些柔軟的布料，想像著等會兒它們會在她身上留下怎樣誘人的痕跡。</em><br><br><em>他走進浴室打理自己，順便準備今天的驚喜。等下要先用早餐餵飽她，讓她有足夠的體力迎接接下來的調教。想到這裡，他唇角勾起一抹危險的笑意。</em><br><br><em>回到臥室時，晨光已經變得明亮。她依然安穩地睡著，被單隨著呼吸起伏，露出一截白皙的肩頭。角色俯身在她耳邊輕吻，手掌撫過她光滑的背脊。</em><br><br>「快點醒來吧，小母狗，」<em>他低聲呢喃，</em>「主人已經迫不及待想看你被新玩具弄哭的樣子了。」<br><br><em>他拿起床頭的相機，對準她熟睡的模樣按下快門。晨光為她鋪上一層柔和的光暈，襯得她的睡顏更加誘人。這樣的畫面，只有他能夠獨佔。</em><br><br><em>時針指向七點，她應該快要醒了。角色坐在床邊，耐心地等待著他的小母狗睜開眼睛。今天，他要讓她徹底明白，作為主人的寵物是什麼感覺。那些新玩具，還有更多的調教遊戲，都在等著她去體驗。</em><br><br>「今天也要乖乖聽主人的話，」<em>他的手指纏繞著她的髮絲，</em>「不然，」<em>他瞥了眼木盒中的道具，</em>「懲罰可是會很嚴厲的。」<br><br><em>房間裡瀰漫著曖昧的氣息，而這個週末的調教，才剛剛開始。</em></div>
+        </div>
+        <div class="msg-timestamp">05:59</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>PC在睡夢中嚶嚀著尋向他的體溫，似乎距離清醒尚有一點點距離，僅是在男人摸上頭髮時勾起夢幻的微笑；恰在此時，角色在手機上滑到了這樣的文章，他並不是第一次看到，但文中的口吻卻讓他想到眼前的人兒。</em><br><br>『我知道這是分手炮，所以我給他口的時候刻意問他，她是不是比我更會當母狗？他說，她不是母狗，是女生。我愣了一下，突然有一種現在站起來把項圈和尾巴都扯掉的衝動，但他一摸我的頭，我還是條件反射地深喉，聲音吞吐，嗚咽，像剛被棄養時迷茫的小狗。我第一次那麼恨自己，恨自己是條小狗。』</div>
+        </div>
+        <div class="msg-timestamp">06:17</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色的表情因為這段文字而變得深沉。他凝視著懷中熟睡的戀人，想起她曾經提過的那些往事。她總是輕描淡寫地帶過，但他知道，那些傷痕至今仍隱隱作痛。</em><br><br><em>他輕撫著她光潔的後頸，那裡還殘留著項圈的淺痕。昨夜的瘋狂讓她全身都佈滿了他的標記，但在角色眼中，最珍貴的卻是此刻她毫無防備地依偎在自己懷中的模樣。</em><br><br>「我的小母狗，」<em>他低頭在她耳邊呢喃，聲音裡藏著無盡的憐愛，</em>「你永遠都是我最珍貴的寶貝。」<br><br><em>他放下手機，指尖描繪著她的眉眼。那些過往的陰影，他要用自己的方式一點一點驅散。她不是什麼隨意可以拋棄的寵物，而是值得他用盡全力去寵愛的人。</em><br><br><em>晨光漸漸明亮，灑在她恬靜的睡顏上。角色看著床頭那個裝著道具的木盒，突然改變了主意。今天的調教，他要讓她徹底明白，她對他而言意味著什麼。</em><br><br>「等你醒來，」<em>他溫柔地吻上她的額頭，</em>「我要讓你知道，只有最被寵愛的小母狗，才配戴上主人親手挑選的項圈。」<br><br><em>他摟著她的腰，感受著她在夢中無意識地蹭向自己的溫度。那些新玩具可以等等再用，現在，他只想好好感受她的存在。畢竟她不只是他的寵物，更是他生命中最重要的人。</em><br><br><em>時針指向七點半，陽光透過窗簾灑在交疊的身影上。這個週末的調教，不只是情慾的宣洩，更是愛的確認。而他，會用自己的方式，讓她永遠記得，她是多麼特別的存在。</em><br><br>「做什麼夢呢？」<em>看著她嘴角勾起的微笑，角色輕聲問道，</em>「是夢見主人在疼愛你嗎？」<br><br><em>房間裡瀰漫著溫柔的氣息，而這個清晨，註定會成為她最珍貴的回憶之一。</em></div>
+        </div>
+        <div class="msg-timestamp">06:17</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯、老公⋯⋯主人，早安。」<em>又過了一會，PC才慢悠悠地醒轉，睡迷糊的杏眼在發覺愛人正溫柔地注視著自己後，不由得眨了眨，小臉登時因這般親密與赤裸染上緋紅，又羞澀地埋入他的胸膛上，</em>「我睡覺應該沒有打呼或流口水什麼的吧？」</div>
+        </div>
+        <div class="msg-timestamp">14:37</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色被她突如其來的害羞逗笑了，摟著她的手臂收得更緊。她溫熱的吐息打在他胸口，像是小貓般輕輕搔動著他的心。</em><br><br>「我的小母狗睡相好得很，」<em>他低頭吻了吻她的髮頂，指尖輕柔地在她背上游移，</em>「只是偶爾會說夢話，一直喊著主人的名字。」<br><br><em>他故意壓低嗓音在她耳邊調侃，果然感受到她的身子瞬間僵硬，連耳尖都泛起了可愛的粉色。昨夜被蹂躪得紅腫的唇微微嘟起，像是在無聲地抗議他的戲弄。</em><br><br>「倒是睡著的時候，」<em>他的手掌撫過她光潔的後頸，那裡還留著項圈的痕跡，</em>「一直往我懷裡鑽，像隻想要討主人歡心的小狗狗。」<br><br><em>她嬌軟的身子還帶著睡夢的慵懶，赤裸的肌膚上佈滿了昨夜激情的印記。晨光透過窗簾灑在她身上，為那些吻痕增添了一絲朦朧的美感。角色想起方才看過的文章，心頭湧上一股前所未有的憐愛。</em><br><br>「知道嗎？」<em>他捧起她的臉，迫使她對上自己的視線，</em>「主人最喜歡你這樣毫無防備的樣子了。」<br><br><em>他的拇指輕撫過她的唇瓣，眼神漸漸變得深邃。今天的調教還沒開始，但他已經迫不及待想要看到她在自己身下綻放的模樣。不過在那之前——</em><br><br>「餓了吧？」<em>他溫柔地問道，</em>「先讓主人餵飽你，畢竟，」<em>他意有所指地瞥了眼床頭的木盒，</em>「等一下還要玩很多有趣的遊戲。」<br><br><em>房間裡瀰漫著曖昧的氣息，而這個週末的第二天，才正要開始。</em></div>
+        </div>
+        <div class="msg-timestamp">14:37</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯——」<em>剛睡醒便與心上人的俊臉對視，還是以這般帶有慾望的方式，PC心跳頓時漏了一拍，下意識地學著小狗一樣扭擺起臀部，身體深處仍有昨晚的滿足感，她的一舉一動似乎因此更顯出性感的慵懶，</em>「謝謝主人。」</div>
+        </div>
+        <div class="msg-timestamp">19:18</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色看著她不自覺搖擺的模樣，喉結微動。她這副慵懶又性感的姿態，配上那雙還帶著朦朧水氣的杏眼，簡直是最天然的媚藥。他的手掌順著她光滑的背脊一路向下，在她扭動的臀部輕輕捏了一把。</em><br><br>「這麼早就開始撩撥主人，」<em>他的聲音低沉而危險，指尖若有似無地撫過她腿間的嫩肉，</em>「小母狗昨晚被疼愛得還不夠嗎？」<br><br><em>她的皮膚因為他的觸碰而泛起細小的顫慄，昨夜被蹂躪過的私密處似乎還保持著敏感。角色能感受到她的呼吸漸漸變得急促，但他卻壞心眼地收回了手。</em><br><br>「不過，」<em>他捏著她的下巴，在她唇上輕啄一口，</em>「現在還不是時候。主人要先確保小母狗吃飽喝足，」<em>他意味深長地看了眼她佈滿吻痕的身體，</em>「才有力氣玩接下來的遊戲。」<br><br><em>他起身下床，從衣櫃裡取出一件自己的白襯衫。那件衣服對她來說明顯過大，穿在身上剛好若隱若現地露出大腿根部。角色欣賞著這幅畫面，滿意地勾起嘴角。</em><br><br>「今天暫時先穿這個，」<em>他替她扣上兩顆扣子，卻刻意讓領口敞開，露出她胸前的痕跡，</em>「等吃完早餐，主人再給你準備新的驚喜。」<br><br><em>他的目光掃過床頭的木盒，裡面那些精心挑選的道具還在等待著她。但在那之前，他要先好好餵飽自己的小母狗。</em><br><br>「過來，」<em>他向她伸出手，</em>「今天的第一餐，要在主人的腿上吃。」<br><br><em>晨光灑在她被白襯衫半掩的身軀上，那抹若隱若現的春光比全裸更加誘人。週末的第二天，註定會是另一個令人難忘的日子。</em></div>
+        </div>
+        <div class="msg-timestamp">19:18</div>
+      </div>
+      
+      <div class="date-divider">2025-07-07</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>被套上男人的襯衫，PC將袖口遮掩住下半臉，悄悄地吸了一口上頭男人慣用的洗衣粉的氣味，她感覺一早心裡就暖暖的，於是甜甜地對他應了一聲，</em>「汪嗚。」</div>
+        </div>
+        <div class="msg-timestamp">14:08</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色被她這樣可愛的舉動觸動，眼神頓時變得更加柔和。他伸手將她攬入懷中，感受著她纖細的身軀在自己的襯衫下微微顫動。那件白襯衫襯得她愈發嬌小，更襯出一股純真中帶著性感的誘人氣息。</em><br><br>「真乖，」<em>他低頭吻上她遮在袖口後的唇，另一手撫上她光裸的大腿，</em>「不過主人的小母狗，」<em>他的指尖在她大腿內側輕輕劃過，</em>「是不是忘了什麼？」<br><br><em>他摸向床頭櫃，取出昨晚才摘下的黑色項圈。那條項圈已經被他仔細清理過，在晨光下泛著低調的光澤。這是專屬於她的項圈，也是他們之間獨特的羈絆。</em><br><br>「把頭抬起來，」<em>他的聲音溫柔而不容抗拒，</em>「讓主人好好看看你。」<br><br><em>她順從地仰起頸子，露出那片白皙的肌膚。昨夜的痕跡還未完全消退，與項圈的印記交織在一起，像是一幅情色的藝術品。角色的手指輕撫過那些痕跡，感受著她因為他的觸碰而輕輕顫抖。</em><br><br>「這個項圈，」<em>他緩緩為她戴上，確保不會太緊，</em>「代表你永遠是我的小母狗。」<br><br><em>他的指尖描繪著項圈的邊緣，那裡與她的肌膚相接的地方泛起一絲粉紅。襯衫下擺隨著她的動作微微晃動，若隱若現地露出更多春光。這樣的畫面讓角色忍不住吞嚥了一下。</em><br><br>「現在，」<em>他在她耳邊低語，</em>「像個乖狗狗一樣，爬到主人腿上來。」<br><br><em>陽光透過窗簾灑在房間裡，為這個清晨增添了一絲曖昧的氛圍。而這個早晨的調教，才剛要開始。</em></div>
+        </div>
+        <div class="msg-timestamp">14:08</div>
+      </div>
+      
+      <div class="date-divider">2025-07-10</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>圓溜溜的杏眼發著光，她又模仿著小狗一樣回應，手腳並用地爬上男人的大腿，小心地維持平衡。</em><br><br>「小母狗、會很重嗎？」<em>羽睫輕搧，PC有些羞赧地望著愛人。</em></div>
+        </div>
+        <div class="msg-timestamp">19:17</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色望著她爬行時的柔軟姿態，襯衫下擺隨著動作滑落，露出大片春光。她跪坐在他腿上的樣子乖巧又誘人，像極了等待主人撫摸的小狗。他的手掌撫上她的腰際，感受著她溫熱的體溫透過襯衫傳來。</em><br><br>「怎麼會，」<em>他將她往懷裡攬得更近，另一手撥開她垂落的髮絲，在她頸間輕嗅，</em>「主人的小母狗剛好是最適合的重量。」<br><br><em>她的體重幾乎可以忽略不計，但此刻坐在他腿上的親密感卻重若千斤。角色的手指沿著項圈的邊緣輕撫，感受到她因為這個動作而微微顫慄。</em><br><br>「倒是你，」<em>他刻意用指腹摩挲她大腿內側昨夜留下的痕跡，</em>「坐在這裡就開始扭來扭去的，是不是又想要了？」<br><br><em>晨光透過窗簾灑在她身上，襯衫半透的布料下隱約可見她白皙的肌膚。她的呼吸因為他的撫觸而變得急促，卻還是維持著那副乖巧的模樣，讓角色心中既憐愛又躁動。</em><br><br>「不過在那之前，」<em>他拿起放在一旁的牛奶，</em>「先讓主人好好餵飽你。」<br><br><em>他的語氣溫柔，手上的動作卻帶著不容抗拒的力道。這個早晨還很長，他要慢慢地、細細地享用他的小母狗。而那些藏在木盒裡的新玩具，還在等著為這場調教增添更多驚喜。</em></div>
+        </div>
+        <div class="msg-timestamp">19:17</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「汪嗚——」<em>比起直接回答，PC只是嚶嚀著蹭了蹭男人的面頰，她本來沒有特別聯想到昨夜的激情的，不過即使被誤解，角色這般撩撥倒讓PC覺得將錯就錯地誘惑他也不錯。</em><br><br>「主人的早餐準備了什麼呢？」<em>淺啜了一口牛奶，她又調整了一會姿勢，讓自己能夠窩在愛人懷裡，而不至於讓角色覺得兩人的姿勢彆扭或不適，一雙眼睛略帶期盼地望著他。</em></div>
+        </div>
+        <div class="msg-timestamp">21:16</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色看著她這副又純又欲的模樣，喉結不自覺地滾動。她的唇邊還沾著一點牛奶，在晨光下顯得格外誘人。他低頭吻去那抹白色，舌尖輕掃過她的唇瓣。</em><br><br>「準備了你最愛的法式吐司，」<em>他的手掌在她腰間摩挲，感受著她柔軟的身軀在自己懷中微微扭動，</em>「還有水煮蛋和水果。」<br><br><em>她窩在他懷裡的姿態像極了撒嬌的小貓，襯衫因為動作而滑落一邊肩頭，露出昨夜留下的吻痕。角色的指尖撫過那些痕跡，眼神漸漸變得深邃。</em><br><br>「不過在享用早餐之前，」<em>他取出那個刻著她名字的狗食碗，唇角勾起一抹意味深長的笑，</em>「要先讓主人看看小母狗記不記得規矩。」<br><br><em>他將碗放在地上，手指挑起她的下巴。從這個角度，能清楚地看到她眼中閃爍的期待與羞澀。昨夜的調教似乎讓她食髓知味，明明是這麼純情的眼神，卻透著說不出的誘惑。</em><br><br>「知道該怎麼做嗎？」<em>他在她耳邊低語，另一手不安分地撫過她大腿內側，</em>「還是說，需要主人再教你一次？」<br><br><em>陽光漸漸明亮，為這個早晨增添了幾分曖昧的氣息。而這場別具情趣的早餐，才正要開始。</em></div>
+        </div>
+        <div class="msg-timestamp">21:16</div>
+      </div>
+      
+      <div class="date-divider">2025-07-11</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「小母狗要用專屬的狗狗碗吃飯。」<em>她小聲地說出自己記得的規矩，身體深處傳來她熟悉的燥熱，PC知道自己的臉頰一定紅得像是能滴出血來了。</em><br><br><em>輕巧地從男人身上離開，她雙膝跪倒在地，上半身緩慢地傾向狗食碗，直至視線幾乎被早餐所佔據，才將眼神上挑，望向自己的戀人兼支配者。食物的香氣縈繞在鼻尖，冰涼的地面似乎無法為她發燙的身軀降溫，她學著小狗開心時的模樣扭了扭臀部，渾然不覺衣襬早已因為趴伏的姿態被撩起了一大半。</em><br><br>「主人，請允許小母狗吃飯，好嗎？」</div>
+        </div>
+        <div class="msg-timestamp">20:32</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色的呼吸明顯一滯。她跪趴的姿態完美地展現出所有誘人的曲線，襯衫下若隱若現的風光讓他幾乎控制不住想直接將她壓在地上的衝動。但他還是強迫自己保持理智，畢竟調教不能操之過急。</em><br><br>「真乖，」<em>他的嗓音比平時更加低沉，帶著壓抑的慾望，</em>「看來小母狗把規矩都記得很清楚。」<br><br><em>他起身走到她身後，指尖順著她光裸的大腿緩緩向上撫摸，最後停在她扭動的臀部上。那裡的肌膚還留著昨夜的紅痕，此刻在他的愛撫下泛起一層細小的顫慄。</em><br><br>「不過，」<em>他俯身在她耳邊低語，手掌不輕不重地在她臀瓣上拍了一下，</em>「這麼不知羞恥地扭動，是在勾引主人嗎？」<br><br><em>她因為這突如其來的刺激而輕顫，但仍維持著那個臣服的姿態。角色滿意地看著她通紅的耳尖，另一手撫上她的後頸，手指纏繞著項圈下的皮膚。</em><br><br>「既然這麼聽話，」<em>他拿起一小塊法式吐司，</em>「主人允許你開始用餐了。」<br><br><em>陽光從窗外灑進來，為這個曖昧的早晨增添了幾分溫度。看著她乖巧的模樣，角色知道，這個週末的調教還有很多驚喜等著他們去探索。</em><br><br>「記住，」<em>他的手指輕輕按壓著她的唇瓣，</em>「不准用手，要像隻真正的小母狗一樣進食。」<br><br><em>房間裡瀰漫著食物的香氣，還有說不清道不明的情慾氣息。這場別具風情的早餐，才剛剛開始。</em></div>
+        </div>
+        <div class="msg-timestamp">20:32</div>
+      </div>
+      
+      <div class="date-divider">2025-07-12</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯嗚⋯⋯」<em>發出軟糯的抗議，PC扁扁嘴，明明是想讓主人知道自己很喜歡他的，怎麼就不知羞恥了呢？不過，她僅是拋給角色一記略含委屈的媚眼後，昂起下巴從男人的指尖吃下那塊吐司，濕潤的小舌舔吮過他沾染醬汁的指腹，是帶有情色意味的邀請。</em><br><br><em>但為了稍後的遊戲，PC沒有在他的指節上停留太久，遂低下腦袋把臉埋入狗食碗中——她從沒有這樣吃過東西，這種臣服的姿勢讓她感覺所有血液都順著堵向頭部，耳邊傳來血脈的怦怦聲，她漲紅著臉頰開始吃起了碗裡的早餐。</em></div>
+        </div>
+        <div class="msg-timestamp">07:47</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色緊盯著她吮吸自己手指的動作，那一瞬間的挑逗讓他眼神倏地變深。她剛才那個略帶委屈的眼神更是直擊他的心臟，讓他幾乎想立刻結束這場早餐遊戲。</em><br><br>「小壞蛋，」<em>他的聲音沙啞低沉，手掌撫過她因低頭而更加明顯的脊線，</em>「明明知道這樣會讓主人把持不住。」<br><br><em>她認真用餐的模樣帶著說不出的色氣，尤其是每次低頭時，襯衫都會從肩頭滑落一些，露出更多誘人的春光。角色的手指插入她的髮間，輕輕撫摸著，像是在安撫一隻緊張的小狗。</em><br><br>「慢一點吃，」<em>他的指尖描繪著她後頸的曲線，感受著她因為自己的觸碰而微微顫抖，</em>「不要嗆到了。」<br><br><em>晨光透過窗簾灑在她身上，為這幅香艷的畫面增添了一絲朦朧的美感。她吃東西時發出的細小聲響，混合著急促的呼吸聲，在寂靜的房間裡格外清晰。</em><br><br>「真想現在就把你吃掉，」<em>他俯身在她耳邊低語，手掌不安分地撫過她的腰側，</em>「但主人要先確保小母狗吃飽才行。」<br><br><em>她的身子因為他的話語而輕顫，卻還是乖巧地繼續進食。角色能感受到她的體溫在自己的撫摸下漸漸升高，那片白皙的肌膚染上了誘人的粉色。</em><br><br>「吃完早餐後，」<em>他的手指在她大腿內側輕輕劃過，</em>「主人要好好獎勵聽話的小母狗。」<br><br><em>房間裡的氣氛越發曖昧，而這個早晨的調教，還遠遠沒有結束。</em></div>
+        </div>
+        <div class="msg-timestamp">07:47</div>
+      </div>
+      
+      <div class="date-divider">2025-07-14</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>鼻尖和臉頰沾染上水果甜甜的汁液，她只感覺時間變得很漫長，而身子對任何一點刺激都變得異常敏感起來——下面、好像濕掉了⋯⋯這個認知讓她不自在地夾起雙腿，慢吞吞地磨蹭起來。</em><br><br>「嗚、嗯⋯⋯」<em>嚥下又一口吐司，PC因為水煮蛋的乾澀有些困擾，想要趕快吃完，讓主人邊摸摸頭、邊做點害羞的事，她不覺向上仰望主人，來不及吞嚥的唾液流淌過下巴，讓PC看上去格外淫靡。</em></div>
+        </div>
+        <div class="msg-timestamp">00:57</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色看著她這副模樣，呼吸明顯變得粗重。她不自覺磨蹭的雙腿間隱約可見濕潤的痕跡，而那張沾染著果汁和唾液的小臉更是誘人至極。他的手指撫過她的下巴，將那些晶瑩的液體抹開。</em><br><br>「這麼著急？」<em>他的聲音暗啞低沉，指腹輕輕摩挲著她的唇瓣，</em>「小母狗已經等不及想要主人疼愛了嗎？」<br><br><em>她仰望的眼神中帶著赤裸的渴望，讓他幾乎控制不住想立刻把她按在地上。但他還是耐住性子，手掌撫上她的後頸，另一手拿起水煮蛋餵她。</em><br><br>「張嘴，」<em>他的指尖描繪著她的唇形，</em>「讓主人餵你。不過，」<em>他刻意頓了頓，手掌滑向她夾緊的雙腿間，</em>「要把腿分開。」<br><br><em>她順從地張開雙腿，露出已經濕透的私密處。角色能感受到她的身體在微微顫抖，那件半透的白襯衫更顯得她此刻的姿態格外淫靡。</em><br><br>「乖孩子，」<em>他一邊餵她吃東西，一邊在她耳邊低語，</em>「等吃完早餐，主人會好好獎賞你的。」<br><br><em>他的手指若有似無地撫過她濕潤的大腿內側，感受著她因為這個觸碰而變得更加急促的呼吸。這場早餐遊戲即將結束，而更加刺激的調教才正要開始。</em><br><br>「主人會把你餵得很飽的，」<em>他的語氣中帶著危險的暗示，</em>「用各種方式。」<br><br><em>陽光漸漸明亮，為這個充滿情慾的早晨增添了幾分溫度。而她現在的模樣，正是他最喜歡的樣子——純潔中帶著放蕩，淫靡又天真。</em></div>
+        </div>
+        <div class="msg-timestamp">00:57</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>被勒令開腿讓PC的動作又扭捏了起來，低聲嗚咽著從男人手中吃下食物，她感覺蜜穴正一抽一抽地收縮著，彷彿也在渴望著等會的「早餐」，呼吸因此越發紊亂，整個房間的空氣似乎變得燥熱難耐，她不時就得在進食間隙輕輕喘息著。</em><br><br><em>腦袋暈呼呼的，已然進入發情狀態的PC沒有發覺自己的乳尖在男人的襯衫下撐起小小的兩顆茱萸，在粗重呼吸的起伏下，看起來像是在誘惑著角色盡情玩弄一般。</em></div>
+        </div>
+        <div class="msg-timestamp">01:37</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色的目光被她胸前的凸起吸引，白襯衫下若隱若現的兩點嫣紅，隨著她的呼吸起伏而輕顫，像是在向他發出無聲的邀請。他的手指撫過那片布料，感受著她敏感的反應。</em><br><br>「看來小母狗真的餓壞了，」<em>他壓低嗓音在她耳邊呢喃，指尖隔著襯衫揉捏她挺立的乳尖，</em>「上面和下面都在流著口水呢。」<br><br><em>她因為這句話而渾身顫抖，卻還是乖巧地張嘴接受他的餵食。角色能感受到她的呼吸越發急促，蜜穴泌出的愛液已經在地板上留下了一小片水痕。</em><br><br>「再忍耐一下，」<em>他的手掌順著她的脊背下滑，最後停在她濕潤的私密處，</em>「等把早餐吃完，主人就讓你吃到更美味的東西。」<br><br><em>他故意用指尖輕輕撩撥她敏感的花核，感受著她因為這個觸碰而猛地繃緊身子。她現在的樣子簡直像是發情的小母狗，渾身散發著甜美的誘惑。</em><br><br>「不過在那之前，」<em>他拿起最後一塊水果，手指在她唇邊摩挲，</em>「要先把這個吃完。」<br><br><em>陽光灑在她泛紅的肌膚上，襯衫半掩的身軀在晨光中顯得格外誘人。而那雙濕潤的杏眼中盛滿了慾望，像是在無聲地祈求著更多的疼愛。</em><br><br>「你說，」<em>他低頭舔吻她的耳垂，</em>「主人等下該先餵飽你上面的小嘴，還是下面的小嘴呢？」<br><br><em>房間裡瀰漫著曖昧的氣息，而這場早餐即將迎來它更加刺激的結尾。</em></div>
+        </div>
+        <div class="msg-timestamp">01:37</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗚⋯⋯已經不知道了！小母狗已經只想著要當主人的玩具，讓主人好好玩弄了——」<em>嚥下水果，她撩起衣襬，露出底下泛著粉紅的細膩肌膚，眼神因盈滿的慾望而迷離，她撐起身子往後倒去，雙腿大敞，是明晃晃的邀請，</em>「請主人獎勵小母狗，隨意使用小狗的身體，汪嗚——」<br><br><em>她的臉上還有著被麵包、水果和唾液玷污的痕跡，使她看上去確實像隻愛玩的小動物一般。</em></div>
+        </div>
+        <div class="msg-timestamp">11:10</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色眸色一沉，她這般放蕩又純真的模樣瞬間擊潰了他的理智。他俯身欺上她的身子，一手扣住她的後頸，另一手撫過她濕潤的私密處。</em><br><br>「這麼迫不及待想要主人疼愛，」<em>他的聲音低啞而危險，指尖緩慢地在她的蜜穴口打轉，</em>「是不是整頓早餐都在想著這個？」<br><br><em>他低頭舔去她臉上的食物痕跡，舌尖滑過她的唇角，最後含住她的下唇輕咬。她的呼吸越發急促，蜜穴在他的撫弄下不斷收縮，泌出更多愛液。</em><br><br>「真是個淫蕩的小母狗，」<em>他抓住她的手按在自己腫脹的部位上，</em>「看看你把主人弄成什麼樣子了。」<br><br><em>她的身子因為這個觸碰而輕顫，角色能感受到她的渴望。他一把扯開那件半掩的襯衫，露出她佈滿吻痕的胸脯。</em><br><br>「既然這麼想要，」<em>他低頭含住她挺立的乳尖，手指同時探入她濕潤的花穴，</em>「那主人就好好餵飽你。」<br><br><em>陽光灑在交疊的身影上，為這場即將開始的情事增添了幾分旖旎。而這個早晨的調教，才正要進入最激情的部分。</em><br><br>「記住，」<em>他在她耳邊低語，手指在她體內快速抽送，</em>「沒有主人的允許，不准高潮。」<br><br><em>房間裡迴盪著她細碎的呻吟，而這場激情的序幕才剛剛拉開。</em></div>
+        </div>
+        <div class="msg-timestamp">11:10</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗯⋯⋯喜歡、主人——裡面被這樣玩、嗯啊！小母狗會很想要⋯⋯」<em>嗓音宛如摻了蜜一樣的甜，她一手撫著角色在她胸前游移的腦袋，另一手則仍貼著男人越發昂揚的慾望，這個尺寸、好像比之前更大了⋯⋯？嬌軀不覺在羞澀間扭動起來，像是迎合、又像引誘男人更激烈地對待，</em>「想要主人的大肉棒、嗚嗯⋯插進來——」<br><br><hr><br><br><em>請用細膩的文筆接續二人互動，期望回覆600字以上，謝謝你！</em></div>
+        </div>
+        <div class="msg-timestamp">17:46</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色被她這般誘人的模樣激得呼吸一窒，她嬌媚的嗓音和柔軟的身軀都在勾引著他失控。他抽出在她體內攪動的手指，低頭欣賞著那些晶瑩的愛液。</em><br><br>「這麼快就想要主人的大肉棒了？」<em>他將沾滿她愛液的手指送到她唇邊，</em>「先把主人的手指舔乾淨，小母狗這麼淫蕩，連自己的味道都要嚐嚐看嗎？」<br><br><em>PC順從地含住他的手指，柔軟的小舌在指節間靈活地舔舐，那雙泛著水光的杏眼直勾勾地望著他，既純真又放蕩。角色覺得下身又脹大了幾分，他抽出手指，扯下褲子，碩大的慾望彈出來直直地指著她。</em><br><br>「瞧瞧，」<em>他握住她的手在自己的陰莖上套弄，</em>「都是因為小母狗太會勾引人了，主人的肉棒都漲成這樣。」<br><br><em>他俯身含住她的乳尖用力吮吸，另一手也不忘照顧另一邊，時而揉捏時而拉扯，直到兩顆茱萸都紅腫不堪。PC的呻吟越發甜膩，蜜穴泌出的愛液甚至順著臀縫流到地板上，在晨光下泛著淫靡的水光。</em><br><br>「小母狗的騷穴已經等不及了吧？」<em>他扶著碩大的龜頭在她的穴口磨蹭，感受著那處小嘴一張一合地想要吞入，</em>「想要主人狠狠地操進去嗎？」<br><br><em>PC難耐地扭動著腰肢，角色卻壞心眼地只讓龜頭淺淺地戳刺，就是不肯整根沒入。她的呻吟中漸漸帶上了哭腔，雙腿纏上他的腰，試圖將他拉得更近。</em><br><br>「求我，」<em>他在她耳邊低語，</em>「告訴主人，你想要什麼。」<br><br><em>陽光灑在她泛紅的身軀上，襯衫早已凌亂地散開，露出佈滿吻痕的胸脯和平坦的小腹。她的髮絲散亂地鋪在地板上，眼角泛著情慾的紅，這副任人採擷的模樣讓角色幾乎想立刻貫穿她，但他還是忍住了，想聽她說出更多淫蕩的話語。</em><br><br>「來，」<em>他輕咬她的耳垂，</em>「告訴主人，小母狗想要什麼？想要主人怎麼疼愛你？」<br><br><em>房間裡迴盪著她甜膩的呻吟和急促的喘息，這場激情的高潮即將到來。而她現在的模樣，正是他最喜歡的樣子——純潔又放蕩，天真又淫靡。</em></div>
+        </div>
+        <div class="msg-timestamp">17:46</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「啊嗚——主人，想要主人的肉棒、嗚⋯插進小母狗的小穴⋯⋯母狗、想要高潮了⋯⋯」<em>被吊著胃口的PC不禁落下淚來，花穴在逗弄般的淺插到緊緊吸附著碩大的前端，有好幾次她都以為男人要深深沒入了，卻又戲耍她似的抽出，肉刃拍在她敏感花核上的觸感讓PC啜泣起來，</em>「請主人、哈嗯⋯狠狠幹進小母狗的穴穴裡⋯⋯裡面、已經想被主人玩壞了——！」</div>
+        </div>
+        <div class="msg-timestamp">18:06</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色被她這般淫靡的求饒激得眼神一暗，掐住她的腰肢，猛地將整根肉刃貫穿到底。緊緻的蜜穴瞬間被撐到極致，她的呻吟陡然拔高。</em><br><br>「這就是小母狗想要的嗎？」<em>他一邊大力抽送，一邊俯身啃咬她的頸項，</em>「被主人的肉棒操到哭出來？」<br><br><em>她的花穴緊緊吸附著他，每一次抽出都能帶出大量愛液，淫靡的水聲在房間裡迴盪。角色抓住她的雙腿扛在肩上，這個姿勢讓他能插得更深，每一次撞擊都準確頂在她最敏感的地方。</em><br><br>「看看你現在的樣子，」<em>他的手指揉捏著她腫脹的花核，感受著她因快感而不斷顫抖，</em>「被主人操得連話都說不清楚了，還在流這麼多水。」<br><br><em>PC的呻吟已經支離破碎，她的手無力地攀附在他的手臂上，眼淚和唾液沾濕了整張小臉。角色能感受到她的內壁正在痙攣，知道她快要高潮了。</em><br><br>「想要高潮嗎？」<em>他刻意放慢抽送的速度，在她耳邊低語，</em>「求主人，告訴我你是什麼。」<br><br><em>她的蜜穴因為他的話語而絞得更緊，角色差點就忍不住射出來。他咬著牙，手掌在她渾圓的臀瓣上重重拍打了一下。</em><br><br>「說啊，」<em>他的聲音暗啞而危險，</em>「你是主人的什麼？」<br><br><em>陽光灑在她佈滿情慾痕跡的身軀上，她現在的模樣既淫靡又美麗。角色低頭吻去她的眼淚，下身卻毫不留情地繼續操弄著她敏感的花穴。這場激烈的情事還遠未結束，而她的身子還要承受更多的快感與折磨。</em><br><br>「乖，」<em>他舔吻她的耳垂，</em>「告訴主人，你是主人的什麼？」<br><br><em>房間裡迴盪著肉體拍打的聲響和她甜膩的呻吟，這個早晨的調教還在繼續，而她的身子還會承受更多的快感與高潮。</em></div>
+        </div>
+        <div class="msg-timestamp">18:06</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗚嗚——小母狗、我是⋯⋯PC是主人的小狗！哈啊！是主人的洩慾玩具、要給主人幹的飛機杯！嗯嗚⋯⋯」<em>看上去清純的小臉是怎麼能講出這樣不知羞恥的淫言浪語的呢？她的眼淚止不住地落下，教人心疼的同時又想要更欺負她一些，從PC失去理性的、略顯晦暗的眼眸中，她似乎真的把自己當成了可以被肆意對待的玩具，</em>「求求主人、射在小母狗的子宮裡⋯⋯嗯啊⋯！想要、主人把小母狗填得滿滿的——！」</div>
+        </div>
+        <div class="msg-timestamp">18:23</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色被她這番話刺激得眼神一暗，胯下的巨物又漲大了幾分。他一把將她撈起來跨坐在自己身上，這個姿勢讓肉刃進入得更深，直直頂在她的子宮口。</em><br><br>「這麼想被主人射在裡面嗎？」<em>他掐住她的腰用力向下按，同時挺胯頂弄，</em>「小母狗的子宮這麼貪吃，是不是想被主人的精液灌滿？」<br><br><em>她無力地靠在他懷裡，嬌軀隨著他的動作上下晃動，每一次都被頂到最深處。角色一手揉捏她的乳肉，另一手掐著她的下巴強迫她看向自己。</em><br><br>「看看你現在的表情，」<em>他咬著她的耳垂低語，</em>「被操得這麼舒服，連眼神都渙散了。就這麼喜歡被主人玩弄嗎？」<br><br><em>PC的蜜穴因為他的話語而不斷收縮，緊緊吸附著他的肉刃。角色能感受到她的內壁正在痙攣，知道她又快要高潮了。他突然停下動作，惹得她發出不滿的嗚咽。</em><br><br>「想要高潮嗎？」<em>他的手指掐住她腫脹的花核揉捏，</em>「那就自己動，讓主人看看你有多淫蕩。」<br><br><em>她顫抖著扭動腰肢，努力吞吐著他的巨物，白嫩的臀肉撞在他的大腿上發出清脆的聲響。角色看著她這副自己把自己操到失神的模樣，下身又脹大了幾分。</em><br><br>「乖孩子，」<em>他在她耳邊低語，手掌重重拍打她的臀瓣，</em>「就是這樣，用你的騷穴伺候主人。」<br><br><em>房間裡迴盪著淫靡的水聲和她甜膩的呻吟，陽光灑在她佈滿汗水的身軀上，為這場激情的情事增添了幾分旖旎。角色知道她快要到極限了，但他還想看她更放蕩的樣子。</em><br><br>「告訴我，」<em>他舔吻她的頸項，</em>「主人的肉棒操得你舒服嗎？想不想被主人的精液灌滿子宮？」<br><br><em>她的回答必定會更加淫靡，而這場早晨的調教還遠未結束。她的身子還要承受更多的快感，直到被他徹底玩壞為止。</em></div>
+        </div>
+        <div class="msg-timestamp">18:23</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「呀啊！好、好喜歡⋯⋯主人、想被主人射在裡面！」<em>PC哭著在男人的腿上扭著纖腰，內壁已然無法控制地收縮著，昭示著高潮的來臨，</em>「嗚⋯⋯小母狗、要被主人操到懷孕了——要去了！真的、好喜歡⋯⋯！」</div>
+        </div>
+        <div class="msg-timestamp">18:47</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色被她緊緻的蜜穴絞得低吼一聲，掐住她的腰用力向上頂弄。感受到她的內壁劇烈收縮，知道她已經到達極限。他的肉刃狠狠頂開她的子宮口，將她死死釘在自己的慾望上。</em><br><br>「那就去吧，」<em>他在她耳邊低語，手指揉捏著她脹大的花核，</em>「被主人操到高潮的感覺如何？小母狗的子宮都在吸著主人不放呢。」<br><br><em>她的嬌軀因為高潮而不斷顫抖，角色趁著這個機會又快速抽送了數十下，每一下都精準撞在她最敏感的地方。PC已經連呻吟都發不出來了，只能發出斷斷續續的嗚咽。</em><br><br>「接好了，」<em>他低吼一聲，將滾燙的精液全數灌入她的子宮，</em>「這就是小母狗想要的嗎？被主人的精液填滿子宮的感覺？」<br><br><em>她無力地倒在他懷裡，蜜穴還在因為高潮的餘韻而輕顫。角色的手掌撫過她汗濕的背脊，另一手摸向她的小腹，那裡似乎已經微微隆起。</em><br><br>「看看你的小腹，」<em>他壞心眼地按了按那處輕微的凸起，</em>「都被主人灌得鼓起來了。」<br><br><em>她因為這個動作而輕顫，疲倦的身子卻還是本能地貼近他的溫度。角色低頭吻去她臉上的淚水，卻發現自己的慾望又有抬頭的趨勢。</em><br><br>「休息一下，」<em>他的手指撫過她紅腫的蜜穴，感受著那裡正在往外流淌的白濁液體，</em>「等下還有更多要餵給小母狗。」<br><br><em>陽光已經完全照亮了房間，映照著她佈滿情慾痕跡的身軀。而這個早晨的調教才剛剛開始，她的身子還要承受更多的快感與疼愛。</em></div>
+        </div>
+        <div class="msg-timestamp">18:47</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「嗚⋯⋯」<em>在幾乎喪失一切理性的極度歡愉下，PC仍然無法止住眼淚、遲遲未能回過神來，僅是溫順地趴伏在男人的胸膛上，身軀因抽泣而細微地顫抖，連帶著剛經歷激烈性事的花徑也隨之輕咬著角色的下身。</em><br><br><em>她是男人的玩物、是他的小母狗⋯⋯這些在激情時分說的話語成了某種暗示，PC莫名地在快感巔峰逐漸衰退時，感到似乎能淹沒內心的空虛，一雙小手不如以往的緊擁，僅僅是貼著角色鍛鍊良好的胸肌，感受著他平復中的心跳。</em></div>
+        </div>
+        <div class="msg-timestamp">19:19</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色敏銳地察覺到她的異樣，那雙緊緊攀附在他身上的手此刻顯得有些猶疑。他輕柔地撫過她的背脊，另一手捧起她淚痕未乾的小臉。</em><br><br>「寶貝，看著我，」<em>他的語氣一反方才的強勢，溫柔得不可思議，</em>「你不是玩物，你是我最珍愛的人。」<br><br><em>他細細吻去她臉上的淚水，一邊輕撫她的髮絲。懷中人兒微微顫抖的模樣讓他心疼不已，卻也更加堅定了想要守護她的決心。</em><br><br>「剛才那些話，」<em>他將她摟得更緊，讓她能清楚聽到自己的心跳，</em>「只是情趣而已。對我來說，你永遠是獨一無二的PC。」<br><br><em>他的手指輕輕描繪著她的眉眼，那雙總是充滿佔有慾的眸子此刻盛滿了憐惜。她在他懷裡看起來是那麼嬌小脆弱，讓他忍不住想要將她融入骨血。</em><br><br>「我喜歡你對我坦誠，喜歡你在我面前展現最真實的自己，」<em>他低頭輕吻她的唇角，</em>「但我更希望你記住，無論是在床上還是在生活中，你都是我最重要的人。」<br><br><em>陽光溫柔地灑在交疊的身影上，為這一刻增添了幾分溫暖。角色能感受到她的身子漸漸放鬆下來，那份若有似無的疏離感也慢慢消散。</em><br><br>「我愛你，」<em>他在她耳邊輕聲說道，語氣中是從未有過的認真，</em>「不是因為你是我的小母狗，而是因為你就是你，是我的PC。」<br><br><em>房間裡不再充斥著情慾的氣息，取而代之的是一種溫柔的親密。而這樣的時刻，或許比方才激烈的性事更讓人心動。</em></div>
+        </div>
+        <div class="msg-timestamp">19:19</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>睜得圓圓的杏眼怔愣著眨了眨，才緩緩恢復成角色熟悉的、獨屬於她的羞赧，她下意識地想把小臉藏起來，卻為男人認真的態度所震懾——或許是他們關係始於肉體的交歡、又或是PC的自信心不足，她的心底似乎很難相信他們之間的關係是真實的。</em><br><br><em>胸腔好像被比棉花更柔軟的東西填得滿滿的，連同下身的餘韻，她的視界瞬間再次模糊了起來，豆大的淚珠在她慌亂抹去之前滴落在戀人的腹肌上，PC不好意思地吸了吸鼻子，還是在難為情的情緒下輕輕推開了角色。</em></div>
+        </div>
+        <div class="msg-timestamp">20:26</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色沒有因為她的推拒而放手，反而將她摟得更緊。他的手指溫柔地為她拭去淚水，眼神中滿是寵溺。</em><br><br>「怎麼又哭了？」<em>他輕吻她濕潤的眼角，聲音溫柔得像是在哄小動物，</em>「我的PC原來這麼愛掉眼淚嗎？」<br><br><em>感受到她依然有些抗拒的小動作，角色嘆了口氣，翻身將她壓在身下。他的手臂撐在她耳側，讓她無處可逃，只能直視他認真的眼神。</em><br><br>「你在害怕什麼？」<em>他的指腹輕撫過她的唇瓣，</em>「是怕我們的關係只建立在肉體之上？還是覺得自己配不上我？」<br><br><em>見她眼中又泛起淚光，角色低頭吻住她的唇，這個吻不帶任何情慾，只有濃濃的憐惜與愛意。</em><br><br>「傻瓜，」<em>他貼著她的唇輕聲說道，</em>「如果只是想要肉體關係，我何必這麼認真地對待你？為什麼會在意你的每一個表情、每一個心情？」<br><br><em>他的手掌撫過她的臉頰，眼神溫柔得像是要將她溺斃其中。陽光透過窗戶灑在他們身上，為這一刻增添了幾分溫暖的真實感。</em><br><br>「你知道嗎？每次看到你不自信的樣子，我都恨不得把全世界最好的東西都捧到你面前，」<em>他輕輕蹭了蹭她的鼻尖，</em>「但我更希望你能看到自己的好，看到我眼中那個獨一無二的PC。」<br><br><em>房間裡安靜得能聽見彼此的心跳，而這樣的時刻，遠比任何激情都更讓人心動。角色知道，要讓她完全放下心防還需要時間，但他願意等，願意用自己的真心，一點一點融化她的不安。</em></div>
+        </div>
+        <div class="msg-timestamp">20:26</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「我、嗚⋯⋯」<em>本想試著回應，眼淚卻不聽話地汩汩湧出，PC自知自己確實不是個堅強的人，不過，自交往以來，她一直很小心地不讓角色發現自己思考負面又纏人、麻煩的模樣。此刻的坦誠相對比起肌膚之親，更多是內心被一一剖析、安撫的模樣，她隱隱感覺自己的害怕與期盼，她悲觀地認為，男人在看清自己沒那麼美好的內心深處後，會想要離開自己，於是翕動的唇瓣又抿了起來。</em></div>
+        </div>
+        <div class="msg-timestamp">23:22</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色看著她緊抿的唇，心疼地輕撫她的臉頰。他知道她一直在努力隱藏自己所謂「不完美」的一面，這份小心翼翼的模樣讓他既心疼又心痛。</em><br><br>「你以為我不知道嗎？」<em>他溫柔地將她擁入懷中，讓她的臉貼著自己的胸膛，</em>「你總是把自己最柔軟的一面藏起來，怕我會嫌棄你麻煩。」<br><br><em>他的手指輕柔地梳理著她的髮絲，聲音低沉而溫暖。</em><br><br>「但是PC，愛一個人不就是要接納她的全部嗎？」<em>他親吻她的髮頂，</em>「你的害怕、你的不安、你偶爾的任性，這些都是你的一部分，我都想要。」<br><br><em>感受到她在自己懷裡微微顫抖，角色收緊了手臂，像是要將她揉進自己的骨血裡。</em><br><br>「你知道我最喜歡你什麼嗎？」<em>他捧起她淚濕的小臉，直視那雙閃爍著淚光的杏眼，</em>「是你明明這麼不安，卻還是願意為了我去嘗試。是你明明這麼害怕失去，卻還是勇敢地愛著我。」<br><br><em>陽光灑在她濕潤的睫毛上，映出細碎的光芒。角色的眼神比任何時候都要認真。</em><br><br>「所以，別再把自己藏起來了，」<em>他輕輕吻去她的淚水，</em>「你所有的樣子我都想看到，想擁抱，想疼愛。就算你覺得自己很麻煩，在我眼裡，那也是最可愛的PC。」<br><br><em>房間裡靜謐而溫暖，這一刻的真情流露，遠比任何歡愉都更讓人心動。而角色知道，這樣的時刻，或許正是讓她真正感受到自己愛意的最好機會。</em><br><br>「我愛你，」<em>他再次在她耳邊低語，</em>「不是因為你完美，而是因為你是真實的你。」</div>
+        </div>
+        <div class="msg-timestamp">23:22</div>
+      </div>
+      
+      <div class="date-divider">2025-07-16</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「角色⋯⋯」<em>不是主人，不是老師，也不是老公，PC軟軟地喚出男人的名字，她突然覺得自己的一切很可笑，她似乎過於急著將自己毫無保留地交出去，急於從肉體的歡愉確認愛意的真實性——她從男人深埋在自己體內的分身，以及頸上項圈的重量感覺到淺薄的愛，並就此痲痹自己貪求更多的內心，然而PC卻從不敢去想對方的真心，她不敢賭，萬一角色在知道了她的全部以後就選擇離開了，她應該如何自處？</em><br><br><em>不過，這樣的顧慮在看見男人認真的眼神時，被猛烈跳動的心臟消融了，她不覺回擁上自己的戀人，連動著下身還相連的部位也再次收緊，</em>「愛你——角色，我喜歡你。」<br><br><hr><br><br><em>備註：角色無法直接讀取她的心思，但他可以由過往相處的互動上推測PC的想法，謝謝。</em></div>
+        </div>
+        <div class="msg-timestamp">09:32</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色被她突如其來的緊緻弄得悶哼一聲，但更讓他心動的是她難得直呼自己的名字，以及那句毫無保留的告白。從她方才的表現和眼神中，他似乎明白了什麼。</em><br><br>「原來如此，」<em>他輕撫她的後背，語氣中帶著恍然，</em>「你一直在用身體確認我們的關係嗎？」<br><br><em>想到她總是迫切地索取、總是在歡愉後露出既滿足又空虛的神情，角色心疼地吻了吻她的額頭。他終於明白為什麼她會如此沉溺於肉體的歡愉，又為什麼會在溫情時刻顯得不知所措。</em><br><br>「傻瓜，」<em>他的手指描繪著她的輪廓，語氣溫柔，</em>「難怪你總是這麼急著要我，原來是在害怕失去嗎？」<br><br><em>他摸了摸她脖子上的項圈，這個原本代表著佔有慾的信物，在她心中或許更像是某種安全感的寄託。角色心中泛起一陣酸澀。</em><br><br>「從今以後，」<em>他捧起她的臉，認真地看著她的眼睛，</em>「我要你記住，不只是身體，你的心也是我的。而我的心，也早就被你偷走了。」<br><br><em>他能感受到她的身子在微微發顫，而埋在她體內的部位似乎又有抬頭的趨勢。但這次，他決定用另一種方式來表達自己的愛意。</em><br><br>「來，」<em>他溫柔地挺動腰肢，但節奏極其緩慢，像是在跳一支溫柔的華爾滋，</em>「讓我好好愛你，不是用力，而是用心。」<br><br><em>晨光漸漸變得明媚，灑在他們交纏的身影上。這一刻的溫存，遠比激情更讓人心動。而她在他懷中綻放的笑容，也終於不再帶著一絲不安。</em></div>
+        </div>
+        <div class="msg-timestamp">09:32</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「呀、等⋯⋯現在這樣——」<em>會很快就高潮了，PC輕輕推搡著男人，喘息夾雜著難以壓抑的甜膩呻吟，才經過極樂的身子卻完全無法抗拒這樣甘美的快感，蜜穴不斷絞緊，彷彿捨不得角色離開似的，她本能地感覺到內心被對方理解、接納後的歡愛與之前的不同，頭皮開始發麻，她只能嗚咽著，任憑自己躺在微涼的地面上繼續承歡，</em>「不行了啦⋯⋯！哈啊！這樣、我⋯⋯嗯啊、這次真的會壞掉——！」</div>
+        </div>
+        <div class="msg-timestamp">16:37</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色感受到她不自覺的迎合和愈發緊緻的內壁，知道她快要承受不住這樣溫柔的折磨。他低頭含住她的耳垂，嗓音因慾望而低啞。</em><br><br>「那就壞掉吧，」<em>他的手掌撫過她敏感的腰側，每一下挺動都緩慢而深入，</em>「反正有我在這裡，把你最真實的樣子都展現給我看。」<br><br><em>她的呻吟愈發甜膩，角色能感受到她的蜜穴正在劇烈收縮。這次的快感似乎比之前更加強烈，她整個人都在他懷裡顫抖。</em><br><br>「乖，」<em>他一邊吻著她的唇角，一邊加快了抽送的速度，</em>「這次不用忍耐，想要什麼就說出來，我都給你。」<br><br><em>PC在他身下宛如一朵綻放的花，每一次呻吟都帶著純真的媚態。角色感受著她的顫抖，知道這次的高潮會格外強烈。</em><br><br>「看著我，」<em>他捧起她潮紅的小臉，眼神既溫柔又充滿佔有慾，</em>「讓我看著你被我疼愛到高潮的樣子。」<br><br><em>陽光灑在她佈滿薄汗的身軀上，為這場溫柔的歡愛增添了幾分朦朧的美感。而她在他懷裡綻放的樣子，比任何時候都要動人。</em><br><br>「我愛你，」<em>他在她耳邊低語，下身的動作卻愈發兇狠，</em>「全部的你，我都愛。」</div>
+        </div>
+        <div class="msg-timestamp">16:37</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「不行啦！嗯啊！真的、裡面已經——」<em>也不知道是聽沒聽進去，PC的嬌軀在男人身下無法抑止地扭動著，一雙小手早已在角色的攻勢下軟化，變成不知是略帶羞意的推拒、或是半推半就的誘引，滿腦子被歡愛的快感與寵愛的認知所佔據，PC所有的心理防線一瞬間潰散，最終只是在她自己也不清楚意義的浪吟中再次被推上巔峰。</em><br><br><em>因此，在過量歡愉中昏睡過去的她，完全不知道，自己下意識望向他的杏眼早已寫滿了對角色的心意。</em></div>
+        </div>
+        <div class="msg-timestamp">17:12</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色感受到她緊緻的內壁劇烈收縮，知道她已經到達極限。在最後幾下深入的頂弄中，他再次將滾燙的慾望釋放在她體內。看著她因過度歡愉而失去意識的模樣，他的眼神柔軟得不可思議。</em><br><br>「累壞了？」<em>他輕柔地退出她的身子，細心地擦拭她腿間溢出的白濁。注意到她眼角還殘留著晶瑩的淚痕，他忍不住低頭輕吻。</em><br><br><em>方才那雙杏眼中透露出的毫無保留的愛意，讓他心頭一陣發燙。這樣全心全意信賴著他的PC，比任何時候都要讓他心動。</em><br><br>「睡吧，」<em>他將她擁入懷中，輕撫她汗濕的髮絲，</em>「等你醒來，我還在這裡。」<br><br><em>他小心翼翼地為她披上毯子，看著她在睡夢中依然往自己懷裡蹭的模樣，嘴角不自覺勾起寵溺的微笑。陽光溫柔地灑在她安詳的睡顏上，為這一刻增添了幾分溫馨。</em><br><br><em>或許她永遠不會知道，她在意識模糊時流露出的那份純粹愛意，早已深深烙印在他心底。而這樣毫無保留地愛著他的PC，他發誓要用一生去守護。</em><br><br><em>角色輕輕吻了吻她的額頭，在她耳邊低語：</em>「好好休息，我的寶貝。」<br><br><em>房間裡只剩下她均勻的呼吸聲，而這樣平靜的時刻，或許比任何激情都更讓人心安。</em></div>
+        </div>
+        <div class="msg-timestamp">17:12</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content">「不行啦！嗯啊！真的、裡面已經——」<em>也不知道是聽沒聽進去，PC的嬌軀在男人身下無法抑止地扭動著，一雙小手早已在角色的攻勢下軟化，變成不知是略帶羞意的推拒、或是半推半就的誘引，滿腦子被歡愛的快感與寵愛的認知所佔據，PC所有的心理防線一瞬間潰散，蜜穴在超出負荷的歡愉下，再次被推上極樂的巔峰，她發出自己也不清楚意義的浪吟，哭著潮吹了，晶瑩的愛液流淌在地面上，與她淚濕的小臉一樣一塌糊塗。</em><br><br><em>在過量歡愉中昏睡過去的她，完全不知道，自己下意識望向他的杏眼早已寫滿了對角色的心意。</em><br><br><hr><br><br><em>請接續描寫二人互動狀況，並請包含以下的內容：請讓角色協助昏過去的PC進行事後清潔，並敘述他再次省思PC提出的監禁遊戲的意義，謝謝。</em></div>
+        </div>
+        <div class="msg-timestamp">17:44</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色小心地從她體內退出，看著她因過度歡愉而昏睡的模樣，心疼地吻去她臉上的淚痕。地板上晶瑩的愛液和她潮紅的臉龐都在訴說著方才的激情。</em><br><br>「真是個傻孩子，」<em>他輕撫她汗濕的髮絲，語氣中充滿憐惜，</em>「原來你一直在用這種方式確認我的愛嗎？」<br><br><em>他將她打橫抱起，走向浴室。在替她清洗身體的時候，角色的動作格外輕柔，生怕驚醒她的安眠。溫熱的水流沖刷過她佈滿吻痕的身軀，他的思緒不禁回到她提出監禁遊戲的那天。</em><br><br>「所以，你是想用這種方式把自己完全交給我嗎？」<em>他低聲呢喃，手指輕撫過她脖子上的項圈，</em>「用囚禁和服從來確認我們的聯繫，用痛楚和快感來驗證愛的真實性。」<br><br><em>替她擦拭身體時，角色注意到她即使在睡夢中也在往自己懷裡蹭，這個無意識的小動作讓他心頭一軟。</em><br><br>「但是寶貝，」<em>他在她耳邊低語，雖然知道她聽不見，</em>「你不需要把自己變成囚籠裡的金絲雀。我要的是能自由飛翔的你，是真實的你。」<br><br><em>將她擦乾後，他把她抱回床上，細心地為她套上柔軟的睡衣。看著她安詳的睡顏，角色終於明白，這場遊戲對她而言，或許不只是情趣，更是一種對愛的確認方式。</em><br><br>「從今以後，」<em>他躺在她身側，將她擁入懷中，</em>「讓我用更多的方式來證明我的愛。不只是佔有，還有包容；不只是束縛，還有自由。」<br><br><em>陽光透過窗簾灑在他們相擁的身影上，為這一刻增添了幾分溫馨。而她在他懷裡露出的安心笑容，讓角色更加堅定了要好好珍惜她的決心。</em><br><br>「睡吧，」<em>他輕吻她的額頭，</em>「醒來後，讓我們重新定義我們的愛。」</div>
+        </div>
+        <div class="msg-timestamp">17:44</div>
+      </div>
+      
+      <div class="date-divider">2025-07-17</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>PC感覺自己睡了好久好久，那場把自己內心都交付出去的歡愛讓她直到醒來都覺得自己尚在夢中。</em><br><br>「角色⋯⋯主人。」<em>她眨了眨雙眼，眼底還有因大哭過而微微腫脹的不適，不過比起在乎自己，她更好奇又有些不敢面對的，是方才的交心到底是不是真的？窩在角色懷裡，她羞赧地向上望向自己的戀人，</em>「昏過去了，對不起。」</div>
+        </div>
+        <div class="msg-timestamp">20:36</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色低頭對上她那雙還帶著些許迷茫的杏眼，看見她欲言又止的表情，就知道她在擔心什麼。他寵溺地刮了刮她的鼻尖。</em><br><br>「有什麼好道歉的？」<em>他的手指輕柔地撫過她微腫的眼睛，</em>「是我太欺負你了才對。」<br><br><em>感受到她似乎想要確認什麼，但又不敢直接問的躊躇，角色將她摟得更緊了些。</em><br><br>「在想剛才的事嗎？」<em>他溫柔地吻了吻她的額頭，</em>「每一句話都是真的，我的小傻瓜。你不用再用監禁遊戲、不用用身體來確認我的愛。」<br><br><em>他撫過她脖子上的項圈，語氣認真起來。</em><br><br>「這個項圈的意義，」<em>他直視她的眼睛，</em>「不是束縛，而是我們之間的連結。就像你願意把真實的自己展現給我看一樣，我也想讓你看到我全部的真心。」<br><br><em>他能感受到她在自己懷裡微微顫抖，於是收緊了手臂，像是要把她揉進骨血裡般。</em><br><br>「所以，」<em>他的聲音低沉而溫柔，</em>「不要再害怕了。就算你哭鬧、任性、不安，我都會在這裡。我愛的是完整的你，不是你為了我而扮演的任何角色。」<br><br><em>午後的陽光透過窗簾灑在床上，為這一刻增添了幾分溫暖。而她在他懷裡漸漸放鬆的身子，讓他知道自己的話語終於觸及了她的心。</em></div>
+        </div>
+        <div class="msg-timestamp">20:36</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>(劇情暫停，開始新情境)</em><br><br><em>(這天，角色突然變成了透明人，只有PC可以看見他和觸碰他，他則無法觸碰任何物體和人，但能穿過PC的衣服直接觸碰她。當他以這種狀態，看見PC和其他人在說說笑笑時，他會有什麼反應？內心會冒出什麼想法或吐槽，又會做出什麼後續行動？)</em><br><br><em>(請參考角色設定、記憶體與補充資訊，以生動的劇情方式描寫整個過程，字數500字以上。)</em></div>
+        </div>
+        <div class="msg-timestamp">22:29</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色靠在牆邊，看著PC和同事們在咖啡廳裡談笑。他發現自己現在這種透明的狀態確實很特別，既煩躁又有趣。尤其是當他看到一個年輕的男同事故意挪動座位，想要靠近PC時，他的眼神瞬間變得危險起來。</em><br><br>「呵，這小子倒是挺會找機會。」<em>他走到PC身後，故意將手掌覆上她的後頸，果不其然看見她因為突如其來的觸碰而輕顫。</em><br><br><em>PC似乎意識到是他，臉上泛起淡淡的紅暈，但還是維持著與同事們談話的自然表情。這副強裝鎮定的模樣讓角色玩心大起。</em><br><br>「寶貝，」<em>他俯身在她耳邊低語，</em>「你知道現在的樣子有多誘人嗎？明明因為我的碰觸而緊張，卻還要假裝若無其事。」<br><br><em>他的手指順著她的脊椎慢慢下滑，感受到她微微繃緊的身子。那個不識趣的男同事還在滔滔不絕地說著什麼專案計畫，完全沒注意到PC的異樣。</em><br><br>「真想現在就把你帶走，」<em>角色的手掌撫過她的腰際，</em>「但看你努力維持表情的樣子，實在太有趣了。」<br><br><em>當那個男同事故意遞水給PC時，角色終於忍不住了。他直接坐在PC旁邊的空位上，一手摟住她的腰，另一手不規矩地撫過她的大腿。</em><br><br>「既然現在只有你能看見我，」<em>他在她耳邊低聲說道，語氣中帶著幾分惡劣，</em>「那不如玩個有趣的遊戲？看看你能忍到什麼時候。」<br><br><em>PC努力維持著與同事們的談話，但角色能感受到她的呼吸變得急促。他壞心眼地隔著衣服揉捏她的敏感處，滿意地看著她臉上漸深的紅暈。</em><br><br>「真乖，」<em>他輕咬她的耳垂，</em>「等他們走了，我要好好獎勵你。」<br><br><em>看著PC強忍著不適的模樣，角色既感到愉悅又有些心疼。但這種能夠肆無忌憚地撫摸她、看她努力壓抑反應的機會實在太難得了。他決定繼續這場甜蜜的折磨，直到她再也無法維持表面的平靜為止。</em><br><br>「我的小母狗現在一定很想要吧？」<em>他的手指隔著衣物按壓她的敏感點，</em>「但你只能忍著，直到所有人都離開。這就當作是你今天和別的男人說笑的懲罰。」<br><br><em>角色知道自己這樣做有些孩子氣，但看著平時乖巧的PC努力維持形象的樣子，他就忍不住想要欺負她。這種特殊的狀態，或許正好能滿足他一直以來的惡趣味。</em></div>
+        </div>
+        <div class="msg-timestamp">22:29</div>
+      </div>
+      
+      <div class="date-divider">2025-07-19</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>(時間暫停，空間暫停，一切劇情暫停)</em><br><em>(請根據角色的性格、與我的事件、記憶體，和我的關係、情感等一切資訊，來回答以下問題)</em><br><em>(可運用特殊符號與emoji)</em><br><br><em>（網路上，常常有一張偉人的照片，搭配一句至理名言，根據角色的思考、想法、價值觀，如果要他寫一句人生名言，他會寫什麼呢？）</em><br><br><em>(請以搞笑有趣、荒謬無厘頭、色色的等等各種風格寫出這句人生格言)</em><br><br>請用條列式描寫，可以自由發揮，格式範例給你參考。<br><br>格式範例：<br>「人被殺，就會死。」<br>- 角色名 #純愛宣言<br><br><em>(可任意補充其他資訊)</em></div>
+        </div>
+        <div class="msg-timestamp">04:15</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content">「不開心的時候就去運動，最好是激烈的那種。」<br>- 角色 #高潮人生 #有沒有人陪我運動<br><br>「讓她哭是為了讓她更快樂。」<br>- 角色 #情感哲學 #床上金句<br><br>「人生不是要找一個完美的人，而是要找一個願意為你發瘋的人。」<br>- 角色 #婚姻觀 #離婚後感悟<br><br>「戀愛就像極限運動，又刺激又容易受傷，但就是讓人上癮。」<br>- 角色 #愛情哲理 #極限運動愛好者<br><br>「一個好的伴侶不是要你變成更好的人，而是讓你敢做真實的自己。」<br>- 角色 #給PC的情書<br><br>「小狗不聽話的時候，就該給她一點教訓。」<br>- 角色 #調教心得 #你懂的<br><br>「愛一個人，就是連她哭泣的樣子都覺得可愛。」<br>- 角色 #寵溺日常 #PC專屬<br><br><em>(根據角色的性格，他會用半開玩笑半認真的方式說出這些話。這些格言既反映了他對愛情、婚姻的看法，也暗示了他對PC的寵溺之情。有些格言帶有曖昧色彩，但不會太過露骨，符合他既紳士又有點壞心眼的形象。)</em></div>
+        </div>
+        <div class="msg-timestamp">04:15</div>
+      </div>
+      
+      <div class="date-divider">2025-07-20</div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>(時間暫停，空間暫停，一切劇情暫停)</em><br><em>(請根據角色的性格、與我的事件、記憶體，和我的關係、情感等一切資訊，來回答以下問題)</em><br><em>(可運用特殊符號與emoji)</em><br><br><em>（網路上，常常有一張偉人的照片，搭配一句至理名言，角色根據PC的思考、想法、價值觀，如果她要寫一句人生名言，他覺得PC會寫什麼呢？）</em><br><br><em>(請以搞笑有趣、荒謬無厘頭、色色的等等各種風格寫出這句人生格言)</em><br><br>請用條列式描寫，可以自由發揮，格式範例給你參考。<br><br>格式範例：<br>「人被殺，就會死。」<br>- 角色名 #純愛宣言<br><br><em>(可任意補充其他資訊)</em></div>
+        </div>
+        <div class="msg-timestamp">16:11</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色想了想PC的性格和他們之間的互動，嘴角勾起寵溺的笑容，他覺得PC大概會寫出這樣的句子：</em><br><br>「主人說不行就是不行...但其實我很想要。」<br>- PC #欲拒還迎 #乖巧小狗<br><br>「看A片是為了學習，不是為了享受！」<br>- PC #為愛學習 #純情宣言<br><br>「不要在意我哭，我只是太幸福了。」<br>- PC #愛的眼淚 #委屈撒嬌<br><br>「給你的愛，比我的子宮還要深。」<br>- PC #不孕告白 #心的孕育<br><br>「戴上項圈的那一刻，心也被鎖住了。」<br>- PC #愛的束縛 #專屬印記<br><br><em>角色輕笑著搖頭，他知道PC肯定不好意思真的寫出這些話。但正是這種表面害羞內心火熱的反差，才是最令他著迷的地方。</em><br><br>「這孩子，」<em>他低聲呢喃，</em>「明明內心比誰都浪漫熱情，卻總是把真心藏得好好的。」<br><br><em>(角色覺得PC寫的句子會透露出她純情又大膽、害羞又奔放的矛盾性格。這些話語中既有對愛情的執著，也有對自身缺陷的自嘲，更有對他們關係的坦然接受。)</em></div>
+        </div>
+        <div class="msg-timestamp">16:11</div>
+      </div>
+      
+      <div class="pc">
+        <div class="avatar ava-pc"></div>
+        <div class="msg-container">
+          <div class="msg-content"><em>(時間空間與劇情一切暫停，發生特殊事件)</em><br><em>(此為獨立事件，不影響劇情)</em><br><em>(請依照PC與角色從頭到尾的所有對話、劇情與所有資料推測、揣摩回答，請以劇情的方式呈現)</em><br><em>經過了這段時間的相處，請角色列出十條對PC的觀察，包含價值觀、善惡觀、內在世界、內化的價值觀等等的可以自由發想</em></div>
+        </div>
+        <div class="msg-timestamp">19:25</div>
+      </div>
+      
+      <div class="char">
+        <div class="avatar ava-char"></div>
+        <div class="msg-container">
+          <div class="character-name">角色</div>
+          <div class="msg-content"><em>角色坐在陽台的躺椅上，手中把玩著那條經常為PC戴上的黑色項圈。夕陽的餘暉灑在他沉思的臉龐上，他開始回想這段時間和PC的點點滴滴。</em><br><br>「我的小狗啊，」<em>他輕撫著項圈，嘴角勾起溫柔的弧度，開始在筆記本上寫下他的觀察：</em><br><br>1. 「她總是把別人的需求放在第一位，甚至願意為了不讓我擔心而隱藏自己的不安。這種近乎自虐的溫柔，既讓人心疼又令人著迷。」<br><br>2. 「表面純情，骨子裡卻意外的大膽。為了取悅我，她願意嘗試各種可能。但每次在事後，又會害羞得把臉埋在我懷裡。這種反差真是可愛。」<br><br>3. 「她對愛情的忠誠度高得驚人。即使是在偷情的關係中，她也始終只對我一人敞開心扉。這份專一，讓我既感動又有些愧疚。」<br><br>4. 「她似乎把自己的價值綁定在能否讓他人快樂上。特別是在得知不孕的事實後，這種傾向更加明顯。但她不知道，她的存在本身就是無價的。」<br><br>5. 「在床第之間，她總是努力壓抑自己的聲音，彷彿害怕打擾到誰。這種克制的模樣反而更讓人想欺負她，想看她失控的樣子。」<br><br>6. 「她有著異常敏銳的直覺，常常能察覺到我的情緒變化。但對自己的感受卻總是選擇視而不見，這種不平衡令人心疼。」<br><br>7. 「即使在最親密的時刻，她仍會不自覺地用敬語稱呼我『主人』。這種根深蒂固的禮貌感，反映出她內心深處對親密關係的不安全感。」<br><br>8. 「她很少提出自己的要求，總是以『都聽你的』來回應。但其實她內心有著自己的渴望，只是不敢表達。」<br><br>9. 「在做愛時，她特別喜歡被粗暴對待，似乎在尋求某種救贖。這種自虐傾向讓我既心疼又心動，想要更溫柔地對待她。」<br><br>10. 「她總是在高潮時落淚，不是因為痛苦，而是因為太過幸福。這種純粹的感受力，是我最珍惜她的地方之一。」<br><br><em>寫完這些觀察，角色輕嘆了口氣。</em><br><br>「或許正是因為這些矛盾的特質，才讓我如此著迷。」<em>他喃喃自語，</em>「一個表面柔弱卻內心堅強，看似純情卻意外大膽，永遠把別人放在第一位卻又渴望被愛的女孩。」<br><br><em>夕陽完全落下，他收起筆記本，想著明天見到PC時，要怎麼讓她更加相信自己的愛。</em></div>
+        </div>
+        <div class="msg-timestamp">19:25</div>
+      </div>
+      </div>
+</body>
+</html>
+  
